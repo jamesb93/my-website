@@ -23,13 +23,13 @@ This is a list of several projects I've worked on over the last few years. Most 
 </Project>
 
 <Project url="stitchstrata">
-    <img src="https://f000.backblazeb2.com/file/jb-website/img//re.jpg" class="thumb" slot="image" alt="stitch-strata"/> 
+    <img src="https://f000.backblazeb2.com/file/jb-website/img/re.jpg" class="thumb" slot="image" alt="stitch-strata"/> 
     <span class="title" slot="title">Stitch/Strata</span>
     <span class="caption" slot="caption">This piece is based on several strategies for automatically concatenating vocal segments into small phrases with the aid of the computer.</span>
 </Project>
 
 <Project url="biomimicry">
-    <img src="https://f000.backblazeb2.com/file/jb-website/img//biomimicry.png" class="thumb" slot="image" alt="biomimicry"/> 
+    <img src="https://f000.backblazeb2.com/file/jb-website/img/biomimicry.png" class="thumb" slot="image" alt="biomimicry"/> 
     <span class="title" slot="title">Biomimicry</span>
     <span class="caption" slot="caption">Biomimicry is a co-compositional system that analyses improvised input with audio descriptors. Using the model of a synthetic faulty memory the computer attempts to mimic the textural qualities of the input signal.</span>
 </Project>
