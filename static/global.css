@@ -1,0 +1,64 @@
+html {
+	font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.35em;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+}
+
+body {
+	color: rgba(0, 0, 0, 0.8);
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.5em 0;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+h2 {
+	padding-top: 0.5em;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+a {
+	color: rgb(80, 0, 209);
+}
+
+a:link {
+	color: rgb(80, 0, 209);
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: rgb(80, 0, 209);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#svelte {
+	padding: 0;
+	margin: 0;
+}
+
+code {
+	font-family: menlo, inconsolata, monospace;
+	font-size: calc(1em - 2px);
+	color: #555;
+	background-color: #f0f0f0;
+	padding: 0.2em 0.4em;
+	border-radius: 2px;
+}
+
