@@ -7,7 +7,7 @@
 The sound generating guts of the system are a digital emulation of Peter Blasser’s [(Ciat-Lonbarde)](https://www.ciat-lonbarde.net) [Fyrall](https://www.ciat-lonbarde.net/fyrall/index.html). A single input is used to control the 24 parameters of the synthesis engine by reading through a procedural basis function. You can see a small webm of me playing with this interface below.
 
 <video controls loop>
-    <source src="/webm/jitbfg.webm" type="video/webm">
+    <source src="https://f000.backblazeb2.com/file/jb-website/webm/jitbfg.webm" type="video/webm">
     <track kind="captions">
 </video>
 

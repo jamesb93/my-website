@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div align="center">
-	<img src="/img/personal.jpg" alt="Myself, Niamh Dell and Jameson Feakes">
+	<img src="https://f000.backblazeb2.com/file/jb-website/img/personal.png" alt="Myself, Niamh Dell and Jameson Feakes">
 </div>
 
 I am a composer, sound artist and creative-coder from Perth, Western Australia. I enjoy working with programming in my practice and harnessing the computer to find, organise and create taxonomies of corpora through machine listening and learning. As of 2017, I am a PhD student under the supervision of <a href="http://www.alexanderjharker.co.uk">Alex Harker </a>and <a href="https://pure.hud.ac.uk/en/persons/steven-jan">Steven Jan</a> at the University of Huddersfield.
