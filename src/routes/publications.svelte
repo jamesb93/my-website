@@ -7,7 +7,7 @@
 <p><em>(i) invited but not attended.</em></p>
 <p><em>(p) presented.</em></p>
 <h2 id="section">2020</h2>
-<p><em>(p)</em> - ’Computer-assisted corpus exploration with UMAP and agglomerative clustering. The 2020 Joint Conference on AI Music Creativity, Online. <a href="https://boblsturm.github.io/aimusic2020/papers/CSMC__MuMe_2020_paper_6.pdf"><strong>pdf</strong></a> | <a href="https://www.youtube.com/watch?v=-FNO0QovfsI&amp;feature=youtu.be"><strong>video</strong></a></p>
+<p><em>(p)</em> - ’Computer-assisted corpus exploration with UMAP and agglomerative clustering. The 2020 Joint Conference on AI Music Creativity, Online. <a href="https://zenodo.org/record/4285398"><strong>pdf</strong></a> | <a href="https://www.youtube.com/watch?v=-FNO0QovfsI&amp;feature=youtu.be"><strong>video</strong></a></p>
 <h2 id="section-1">2019</h2>
 <p><em>(p)</em> - ‘Finding things in stuff’. FluCoMa Plenary 2019, Huddersfield, UK. <a href="https://www.youtube.com/watch?v=IpD_XzW1Az4"><strong>video</strong></a></p>
 <p><em>(p)</em> - ‘Composing with raw data and content-aware programs in Python and Lua’. Creative Coding Lab, Huddersfield, UK.</p>

@@ -1,9 +1,6 @@
-<!-- https://daveceddia.com/svelte-with-sass-in-vscode/ -->
-<!-- https://stackoverflow.com/questions/32378953/keep-the-middle-item-centered-when-side-items-have-different-widths -->
-<!-- https://css-tricks.com/full-bleed/ -->
-
 <script>
-	import Header from "../lib/Header.svelte";
+	import Header from "$lib/Header.svelte";
+	import '../app.scss';
 	let w;
 </script>
 

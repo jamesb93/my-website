@@ -1,23 +1,23 @@
 <script>
-    export let url = ""
+
+    import Container from '$lib/container.svelte';
+    export let url = "" 
+
+    function handleClick() {
+        window.location.href = "projects/"+url
+    }
 </script>
 
-<div class="container">
-    <a href="projects/{url}">
-        <slot name="image"></slot>
-    </a>
+<Container click={handleClick}>
+    <slot name="image"></slot>
     <div class="writing">
         <slot name="title">No Title</slot>
         <slot name="caption">No Caption</slot>
     </div>
-</div>
+</Container>
+
 
 <style>
-    .container {
-        padding-top: 20px;
-        display: flex;
-    }
-
     .writing {
         display: flex;
         flex-direction: column;
@@ -25,15 +25,10 @@
         max-width: 400px;
     }
 
-    .container :global(img) {
+    :global(img) {
         width: 130px;
         max-height: 130px;
         display: block;
     }
-
-    a {color: black}
-    a:link {color: black}
-    a:hover {text-decoration: none}
-    a:visited {color: black;}
 </style>
 

@@ -12,7 +12,7 @@
     let playing = false;
     let playPause;
     export let title = "title";
-    export let subtitle = "subtitle";
+    export let subtitle = null;
     export let performer = null;
     export let perfLink = null;
     export let file;
@@ -46,7 +46,7 @@
                 },
                 dataUri: {arraybuffer: buffer},
                 mediaElement: audio,
-                height: 45,
+                height: 30,
                 zoomWaveformColor: 'rgba(0, 30, 128, 0.65)',
                 overviewWaveformColor: 'rgba(0, 15, 100, 1.0)',
                 overviewHighlightColor: 'grey',
@@ -102,7 +102,9 @@
 
 <div class="audio-box">
     <span class="title">{title}</span><br>
+    {#if subtitle}
     <span class="subtitle">{subtitle}</span>
+    {/if}
     {#if performer}
     <br>
     <span class="subtitle">

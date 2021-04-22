@@ -1,5 +1,6 @@
+$font: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Fira Sans", "Droid Sans", Arial, sans-serif;
 html {
-	font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	font-family: $font;
 	font-size: 14px;
 	line-height: 1.35em;
 	text-rendering: optimizeLegibility;
@@ -60,5 +61,9 @@ code {
 	background-color: #f0f0f0;
 	padding: 0.2em 0.4em;
 	border-radius: 2px;
+}
+
+p {
+	line-height: 1.8;
 }
 

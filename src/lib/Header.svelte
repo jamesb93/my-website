@@ -5,15 +5,20 @@
 	import { fly } from 'svelte/transition';
 
 	const links = [
-		'projects', 'code', 'publications', 'performances', 'blog'
+		'projects', 
+		'collaboration',
+		'code', 
+		'publications',
+		'performances'
 	]
 
 	const breakpoint = 800;
 	let w;
 	let expand = false;
 
-	const handleExpand = () => {expand = !expand}
-	const handleLink = () => {expand = false};
+	function handleExpand(){
+		expand = !expand
+	}
 </script>
 
 <svelte:window bind:innerWidth={w} />
@@ -43,6 +48,7 @@
 		opacity: 0.93;
 		top: 0;
 		padding-top: 20px;
+		z-index: 99;
 	}
 
 	.top {
