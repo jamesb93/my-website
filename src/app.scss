@@ -1,6 +1,9 @@
 $font: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Fira Sans", "Droid Sans", Arial, sans-serif;
+$bg-color: #fdfdfd;
+
 html {
 	font-family: $font;
+	background: $bg-color;
 	font-size: 14px;
 	line-height: 1.35em;
 	text-rendering: optimizeLegibility;

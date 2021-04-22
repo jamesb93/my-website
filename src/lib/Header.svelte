@@ -40,10 +40,10 @@
 	<ExpandNav links={links} func={() => expand = false} hide={!expand} />
 </header>
 
-<style>
+<style lang="scss">
 	header {
         position: fixed;
-        background: rgba(255, 255, 255, 1.0);
+        background: #fdfdfd;
         width: 100%;
 		opacity: 0.93;
 		top: 0;
