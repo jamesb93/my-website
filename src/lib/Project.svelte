@@ -9,7 +9,7 @@
 </script>
 
 <Container click={handleClick}>
-    <slot name="image"></slot>
+    <slot name="image" />
     <div class="writing">
         <slot name="title">No Title</slot>
         <slot name="caption">No Caption</slot>

@@ -15,7 +15,7 @@ This is a list of several projects I've worked on over the last few years. If yo
 </Project> -->
 
 <Project url="reconstruction-error">
-    <img src="/static/img/re.jpg" class="thumb" slot="image" alt="reconstruction-error"/> 
+    <img src="/img/re.jpg" class="thumb" slot="image" alt="reconstruction-error"/> 
     <span class="title" slot="title">Reconstruction Error</span>
     <span class="caption" slot="caption">Raw data is harvested from my hard drive and classified and categorised by machine listening and learning software. This album is a collection of my compositions with the sounds that the computer found.</span>
 </Project>
@@ -35,7 +35,7 @@ This is a list of several projects I've worked on over the last few years. If yo
 </Project>
 
 <Project url="biomimicry">
-    <img src="/static/img/biomimicry.png" class="thumb" slot="image" alt="biomimicry"/> 
+    <img src="/img/biomimicry.png" class="thumb" slot="image" alt="biomimicry"/> 
     <span class="title" slot="title">Biomimicry</span>
     <span class="caption" slot="caption">Biomimicry is a co-compositional system that analyses improvised input with audio descriptors. Using the model of a synthetic faulty memory the computer attempts to mimic the textural qualities of the input signal.</span>
 </Project>

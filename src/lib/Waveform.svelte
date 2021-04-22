@@ -1,5 +1,6 @@
 <script>
-    import { onMount } from "svelte";
+    import { onMount } from 'svelte';
+    import { browser } from '$app/env';
     let Peaks;
     let instance;
     let overview;
@@ -33,36 +34,37 @@
     }
 
     onMount (async () => {
-        try {
-            // SSR Compatability
-            const module = await import("peaks.js");
-            Peaks = module.default;
+        if (browser) {
+            try {
+                // SSR Compatability
+                const module = await import("peaks.js");
+                Peaks = module.default;
 
-            // Generate an instance form factory
-            instance = Peaks.init({
-                containers: {
-                    zoomview: zoom,
-                    overview: overview
-                },
-                dataUri: {arraybuffer: buffer},
-                mediaElement: audio,
-                height: 30,
-                zoomWaveformColor: 'rgba(0, 30, 128, 0.65)',
-                overviewWaveformColor: 'rgba(0, 15, 100, 1.0)',
-                overviewHighlightColor: 'grey',
-                overviewHighlightOffset: 11,
-                playheadColor: 'rgba(0, 0, 0, 1)',
-                playheadTextColor: 'rgba(150, 0, 0, 1)',
-                showPlayheadTime: true,
-                fontFamily: 'sans-serif',
-                pointMarkerColor: 'rgba(0, 0, 0, 0.0)',
-                axisGridlineColor: 'rgba(0, 0, 0, 0.0)',
-                randomizeSegmentColor: true,
-            })
-        } catch (err) {
-            console.error(err);
+                // Generate an instance form factory
+                instance = Peaks.init({
+                    containers: {
+                        zoomview: zoom,
+                        overview: overview
+                    },
+                    dataUri: {arraybuffer: buffer},
+                    mediaElement: audio,
+                    height: 30,
+                    zoomWaveformColor: 'rgba(0, 30, 128, 0.65)',
+                    overviewWaveformColor: 'rgba(0, 15, 100, 1.0)',
+                    overviewHighlightColor: 'grey',
+                    overviewHighlightOffset: 11,
+                    playheadColor: 'rgba(0, 0, 0, 1)',
+                    playheadTextColor: 'rgba(150, 0, 0, 1)',
+                    showPlayheadTime: true,
+                    fontFamily: 'sans-serif',
+                    pointMarkerColor: 'rgba(0, 0, 0, 0.0)',
+                    axisGridlineColor: 'rgba(0, 0, 0, 0.0)',
+                    randomizeSegmentColor: true,
+                })
+            } catch (err) {
+                console.error(err);
+            }
         }
-
     });
 </script>
 
