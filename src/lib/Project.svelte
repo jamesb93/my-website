@@ -1,6 +1,6 @@
 <script>
 
-    import Container from '$lib/container.svelte';
+    import Container from '$lib/Container.svelte';
     export let url = "" 
 
     function handleClick() {
