@@ -12,7 +12,7 @@
 		'performances'
 	]
 
-	const breakpoint = 800;
+	const breakpoint = 1000;
 	let w;
 	let expand = false;
 
@@ -40,7 +40,7 @@
 	<ExpandNav links={links} func={() => expand = false} hide={!expand} />
 </header>
 
-<style lang="scss">
+<style>
 	header {
         position: fixed;
         background: #fdfdfd;
@@ -55,9 +55,10 @@
 		display: flex;
         flex-direction: row;
         justify-content: space-around;
-		flex-wrap: wrap;
-		width: 100%;
+		flex-wrap: none;
+		width: 50%;
         height: 50px;
+		margin: 0 auto;
 	}
 
 	.name > a {
