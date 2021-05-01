@@ -8,7 +8,7 @@
 	</article>
 </main>
 
-<style>
+<style media="print">
 	.content {
 		justify-content: center;
 		height: 100%;
@@ -19,5 +19,6 @@
 		max-width: 600px;
 		margin: 0 auto;
 		padding: 15px;
+		padding-top: 50px;
 	}
 </style>
