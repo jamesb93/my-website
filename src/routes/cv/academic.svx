@@ -1,0 +1,799 @@
+<script>
+    import Item from "./Item.svelte"
+</script>
+
+<div id="header">
+    <div id="name-title">
+        <h1>James Bradbury</h1>
+        <i>Curriculum Vitae</i>
+    </div>
+    <div id="address-etc">
+        <p>51 Yew Tree Road, Shepley</p>
+        <p>West Yorkshire, Huddersfield, HD88DT</p>
+        <p>+44 7494795572</p>
+        <p><a href="mailto:james.bradbury@hud.ac.uk">james.bradbury@hud.ac.uk</a></p>
+        <p><a href="https://www.jamesbradbury.xyz">jamesbradbury.xyz</a></p>
+    </div>
+</div>
+
+## Education
+
+<Item>
+<div slot="left">
+
+2017-21
+</div>
+
+<div slot="right">
+
+**PhD Music (writing up)**, The University of Hudderfsield.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2016-17 
+</div>
+
+<div slot="right">
+
+**Masters of Music**, The University of Western Australia
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2011-14
+</div>
+
+<div slot="right">
+
+**Bachelor of Arts (Honours)**. The University of Western Australia
+</div>
+</Item>
+
+## Theses
+
+<Item>
+<div slot="left">
+
+Title
+</div>
+
+<div slot="right">
+
+Harnessing content-aware programs for studio-based digital computer-aided composition. *(In Progress)*
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+Supervisors
+</div>
+
+<div slot="right">
+
+Dr. Alex Harker & Dr. Steven Jan
+</div>
+</Item>
+
+<br>
+<br>
+<Item>
+<div slot="left">
+
+Title
+</div>
+
+<div slot="right">
+
+Computer Creativity: An Evaluation of Three Interactive Musical Systems In Terms Of Their Interaction and Behaviour
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+Supervisors
+</div>
+
+<div slot="right">
+
+Dr. Christopher Tonkin & Dr. Louise Devenish & Dr. Kerry Hagan
+</div>
+</Item>
+
+## Publications
+
+[*Computer-assisted corpus exploration with UMAP and agglomerative clustering*](https://zenodo.org/record/4285398). The 2020 Joint Conference on AI Music Creativity, Online.
+
+[*Biomimicry: Analysis Of A Corpus-Based Interactive Improvisational System*](https://quod.lib.umich.edu/cgi/p/pod/dod-idx/biomimicry-analysis-of-a-corpus-based-interactive.pdf?c=icmc;idno=bbp2372.2017.027;format=pdf) -
+Proceeds of the 2017 International Computer Music Conference, Shanghai.
+
+## Presentations
+
+<Item>
+<div slot="left">
+
+Nov 2019
+</div>
+
+<div slot="right">
+
+*"Finding Things In Stuff"*, Fluid Corpus Manipulation Plenary, Huddersfield, [video link](https://www.youtube.com/watch?v=IpD_XzW1Az4)
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+Feb 2019
+</div>
+
+<div slot="right">
+
+*"Making Decisions About Making Decisions About Making Decisions"*, Creative Coding Lab Symposium at Electric Spring Festival, Huddersfield, [video link](https://youtu.be/Ro30O9u7l8M)
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+Oct 2019
+</div>
+
+<div slot="right">
+
+*"Annealing Strategies"*, CeReNeM Colloquium, Huddersfield.
+</div>
+</Item> 
+
+<Item>
+<div slot="left">
+
+Oct 2017 
+</div>
+
+<div slot="right">
+
+*"Biomimicry: Analysis Of A Corpus-Based Interactive Improvisational System"*, International Computer Music Conference, Shanghai.
+</div>
+</Item> 
+
+## Select Performances
+<Item>
+<div slot="left">
+
+Apr 2019
+</div>
+
+<div slot="right">
+
+*"Refracted Touch"*, for slide guitar and electronics. Performed by Daryl Buckley (ELISION) and James Bradbury
+</div>
+</Item> 
+
+<Item>
+<div slot="left">
+
+Feb 2019
+</div>
+
+<div slot="right">
+
+*'Stitch/Strata'*, for fixed media. Diffused by James Bradbury at the University of Huddersfield as part of Electric Spring Festival.
+</div>
+</Item> 
+
+<Item>
+<div slot="left">
+
+Feb 2019
+</div>
+
+<div slot="right">
+
+*'Stitch/Strata'*, for fixed media. Diffused by James Bradbury at the University of York as part of HISS @ 10.
+</div>
+</Item> 
+
+<Item>
+<div slot="left">
+
+Jul 2017
+</div>
+
+<div slot="right">
+
+*"Intra-tone"*, for trumpet and electronics. Performed by James Bradbury and Dan O'Connor at St.Paul's Church as part of Tura New Music's "Church Series".
+</div>
+</Item> 
+
+<Item>
+<div slot="left">
+
+Jan 2017
+</div>
+
+<div slot="right">
+
+*"Biomimicry"*, for interactive system and one musician. Performed by Sage Pbbbt and James Bradbury at Babushka Bar as part of Audible Edge New Music Festival.
+</div>
+</Item> 
+
+<Item>
+<div slot="left">
+
+Nov 2016
+</div>
+
+<div slot="right">
+
+*"Esolang"*, for two cellos, violin and prepared piano. Performed by David Moran, Mary Rapp, Veronique Serret and Zubin Kanga at the Nest Creative Space, NSW, as part of Ensemble Offspring's "Kontiki Racket" micro-festival.
+</div>
+</Item> 
+
+<Item>
+<div slot="left">
+
+May 2015
+</div>
+
+<div slot="right">
+
+*"Traced Over"*, for bowed guitar and electronics. Performed by James Bradbury and Jamesion Feakes at the Perth Institute of Contemporary Art as part of the Totally Huge New Music Festival.
+</div>
+</Item> 
+
+<Item>
+<div slot="left">
+
+Jun 2014
+</div>
+
+<div slot="right">
+
+*"Entropy on a Clock"*, for chamber orchestra. Performed by the West Australian Symphony orchestra's EChO ensemble, at ABC Studios, WA.
+</div>
+</Item> 
+
+## Select Compositions
+<Item>
+<div slot="left">
+
+2020
+</div>
+
+<div slot="right">
+
+*Interferences*, EP of 3 studio-based compositions.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2020
+</div>
+
+<div slot="right">
+
+*Reconstruction Error*, EP of 5 studio-based compositions.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2019
+</div>
+
+<div slot="right">
+
+*Stitch/Strata*, fixed-media composition.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2019
+</div>
+
+<div slot="right">
+
+*Refracted Touch*, for slide guitar (Daryl Buckley) and electronics.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2018
+</div>
+
+<div slot="right">
+
+*Annealing Strategies*, for simulated annealing system.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2017
+</div>
+
+<div slot="right">
+
+*Intratone*, for trumpet and electronics.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2017
+</div>
+
+<div slot="right">
+
+*Biomimicry*, EP in 10 variations of 2 studio-based compositions.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2016
+</div>
+
+<div slot="right">
+
+*Esolang*, for two cellos, piano and violin.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2015
+</div>
+
+<div slot="right">
+
+*Traced Over*, for bowed guitar and electronics.
+</div>
+</Item>
+
+## Masterclasses and Courses
+
+<Item>
+<div slot="left">
+
+Feb 2019
+
+</div>
+<div slot="right">
+
+Masterclass with Benjamin Thigpen
+
+</div> 
+</Item>
+
+<Item>
+<div slot="left">
+
+Mar 2018
+
+</div>
+<div slot="right">
+
+Masterclass with Miller Puckette
+
+</div> 
+</Item>
+
+<Item>
+<div slot="left">
+
+Feb 2018
+
+</div>
+<div slot="right">
+
+Masterclass with Chaya Czernowin
+
+</div> 
+</Item>
+
+<Item>
+<div slot="left">
+
+Jun 2016
+
+</div>
+<div slot="right">
+
+IRCAM Computer Music Course at Manifeste Festival
+
+</div> 
+</Item>
+
+<Item>
+<div slot="left">
+
+Jul 2016
+
+</div>
+<div slot="right">
+
+Darmstadt International Summer Course for New Music
+
+</div> 
+</Item>
+
+<Item>
+<div slot="left">
+
+Jun 2014
+
+</div>
+<div slot="right">
+
+West Australian Symphony Orchestra: Young Composer Project
+
+</div> 
+</Item>
+
+## Research Experience
+
+<Item>
+<div slot="left">
+
+2018-21
+</div>
+
+<div slot="right">
+
+**Intersymmetric Works**
+
+This is an ongoing project with[Mark Fell](http://www.markfell.com/wiki/) and [Rian Treanor](https://riantreanor.bandcamp.com)  that has successfully received two different sources of funding from [No Bounds](http://noboundsfestival.co.uk) and [rewire](https://www.rewirefestival.nl) festival. It is currently tendering additional funding via the Arts Council Projects Grant .The project is focused on creating distributed and decentralised methods for collaborating and learning music. I am responsible for creating the web-based application, which allows people to join "rooms" and interact wth a variety of rhythmic transformations and synthesis modules together, regardless of their location.
+<div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2020
+</div>
+
+<div slot="right">
+
+**MetaBow Toolkit with Hong Kong Baptist University**
+
+I worked briefly as a contracted programmer for a research project at Hong Baptist University. For this project I created a Max package designed to facilitate composition with gesture recognition and data mapping techniques in combination with their newly created "MetaBow". The package is currently in private alpha but will be released later this year in combination with a call for scores.
+<div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2018-21
+</div>
+
+<div slot="right">
+
+**ReaCoMa**
+
+ReaCoMa began as a pet project to port the Fluid Corpus Manipulation (FluCoMa) tools to REAPER through the ReaScript API. I was awarded an amount of funding to open source the project, create documentation and make the tool more widely accessible to researchers who might not be proficient with Max, SuperCollider or Pure Data for which there are existing versions of the FluCoMa tools. www.reacoma.xyz
+<div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2018-21
+</div>
+
+<div slot="right">
+
+**FluCoMa Community**
+
+Since the start of the FluCoMa project I have been a part of the online community involved in providing feedback and generating discussion around the tools produced by the FluCoMa team at the University of Huddersfield. Through this community I have submitted numerous patches and engaged in discourse around user experience, interface design and electronic music composition. More information here: http://www.flucoma.org
+<div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2018-21
+</div>
+
+<div slot="right">
+
+**Research Assistant to Dr. Alexander Harker**
+
+I was employed to create documentation and a tutorial learning system allowing musicians with a wide range of competencies to become proficient with FrameLib. FrameLib allows composers and creative coders to create custom digital signal processing routines with frame-based processing. The tutorials were created in Max and have been distributed as a package to a large global community. More information here: https://github.com/jamesb93/FrameLib.
+<div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2018-21
+</div>
+
+<div slot="right">
+
+**Visiting Researcher at the University of Limerick's SpADE**
+
+I spent 10 days hosted at the University of Limerick’s Spatialization and Auditory Display Environment, a 32-channel surround sound system designed for multi- disciplinary research. In my residency I wrote a piece using a large databases of vocal phonetic samples and received mentorship from Dr. Kerry Hagan, the principal researcher at the SpADE. The piece that was composed came to fruition at a much a later date in a piece presented in 2019 at the Electric Spring Festival in the United Kingdom.
+<div>
+</Item>
+
+
+## Teaching Experience
+
+### Final Year Project (Univeristy of Huddersfield)
+Tutoring individual students in a 1-on-1 capacity to provide feedback and guide them through the process of creating a substantial creative project. Through this module I have advised on a variety of music genres including classical orchestral composition, soul, hip-hop, metal, punk, progressive rock and electronic music.
+
+### DMP1 - Desktop Music Production (Univeristy of Huddersfield)
+Delivering seminars and lectures on techniques and technologies for computer-based music production including sequencing, sampling, arrangement, and a variety of sound processing techniques. A range of assessments, both technically or creatively focused develops their critical listening and production skills and seminars support them in applying these techniques to a range of individual aesthetics.
+
+### SAE1 - Sonic Arts and Electronica (Univeristy of Huddersfield)
+Delivering seminars that introduce students to a broad range of electronic music and ways of thinking about sound as a creative medium. Various genres were covered from IDM, EDM, acousmatic and sound installation work. For each student, the unit culminates in the submission of a creative portfolio that encourages them to demonstrate the use of technology in imaginative ways. Throughout the year, I provide feedback to them and advise how they can develop their creative workflow, fostering their development as artists.
+
+### SAE2 - Sonics Arts and Electronica (Univeristy of Huddersfield)
+This is a follow on module from SAE1 and is designed for students who completed SAE1 to take on more responsibility developing their practice, while giving them the opportunity to explore more personal aesthetic and creative goals across a variety of electronic based genres. Seminars delved into more complicated or hard to grasp subject matter ranging from sound design, studio practice and compositional technique. I also wrote a series of 6 lectures focusing on topics such as glitch aesthetics, interactive computer-based composition, genre-breaking artists in electronic music and developing creative workflow
+
+### MUSC1055 - Electronic Music: Methods and Means (University of Western Australia)
+Providing seminars covering a wide range of electronic music genres. The seminars focus on exposing students to compositional strategies in these works and how composers outside mainstream genres of music approach structuring and designing music.
+
+## Awards and Funding
+
+<Item>
+<div slot="left">
+
+2017 
+</div>
+
+<div slot="right">
+
+Dennis Smalley Scholarship in Electronic Music - University of Huddersfield
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2015
+</div>
+
+<div slot="right">
+
+Schenberg Fellowship - University of Western Australia
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2015
+</div>
+
+<div slot="right">
+
+University Choral Society Prizes for Music - University of Western Australia
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2015
+</div>
+
+<div slot="right">
+
+Lady Callaway Medal for Music - University of Western Australia
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2014
+</div>
+
+<div slot="right">
+
+Royal Overseas League Third Year Prize in Music Performance - University of Western Australia
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2014
+</div>
+
+<div slot="right">
+
+University Choral Society Prizes for Music - University of Western Australia
+</div>
+</Item>
+
+## Select Technical Experience
+
+<Item>
+<div slot="left">
+
+2020
+</div>
+
+<div slot="right">
+
+**Programmer for Andie Brown's Alucita II Installation**
+
+Created a Max-based system for controlling transducers in order to resonate wine glasses in an installation space. The system was managed through a custom compositional language based on determining the density and spacing of stochastic events.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2019
+</div>
+
+<div slot="right">
+
+**Technical Crew for the travelling Huddersfield Immersive Surround System**
+
+Planning, rigging and configuring diffusion systems at various universities with a sub-set of speakers from the Huddersfield Immersive Surround System (HISS).
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2017-21
+</div>
+
+<div slot="right">
+
+**Member of the Hudderfsield Immersive Surround System**
+
+Crew member involved in rigging and setting up large-scale diffusion systems (typically 50+ speakers)
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2016
+</div>
+
+<div slot="right">
+
+**Co-engineer for *Transformations* CD**
+
+Assistant to Dr. Christ Tonkin in the recording sessions for *Transformations"*
+</div>
+</Item>
+
+## Other Relevant Skills
+
+### Programming
+<Item>
+<div slot="left" style="margin-right: 10px">
+
+Languages
+</div>
+
+<div slot="right">
+
+C++, Python, Nim, JavaScript
+
+I have a basic level of experience with C++, evidenced by the development of bespoke tools for music composition. These include a number of Max externals (onecount, plusequals, bufspill) and additional objects for Dr. Alex Harker's *FrameLib* library (fl.info~, fl.reverse~). I possess advanced knowledge in Pythom, using it across a wide range of applications such as computer-aided composition, audio processing, machine learning and for developing my own composition tool [*FTIS*](https://www.github.com/jamesb93/ftis). I am also highly proficient in JavaScript and web-based programming, creating interactive applications, high-performance web socket servers and documentation websites that follows responsive design principles. I've also developed low-level audio processing tools using Nim such as [mosh](https://www/github.com/jamesb93/mosh), a command line utility for turning raw data into audio.
+
+</div>
+</Item>
+
+### Electronic Music Software
+<Item>
+<div slot="left" style="margin-right: 10px">
+
+Software
+</div>
+
+<div slot="right">
+
+Ableton Live, REAPER, Pure-data, Max, SuperCollider
+
+I have advanced knowledge of and experience with visual programming environments such as Max and Pure-data. In addition to this have advanced knowledge of and experience with digital audio workstations Reaper and Ableton Live. I have an intermediate to basic knowledge of Supercollider and have experience writing my own classes for experimenting with ad-hoc compositional ideas and tools.
+
+</div>
+</Item>
+
+### CD Releases
+
+<Item>
+<div slot="left">
+
+CD / Digital
+</div>
+
+<div slot="right">
+
+Biomimicry (2016) - [Tone List](https://www.tonelist.com.au)
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+Info
+</div>
+
+<div slot="right">
+
+Biomimicry is an interactive real-time system written in Max. Using audio features to analyse the performer’s sound input and a "faulty" memory to store this information, the system creates intense and machine like responses to the human musician. Each CD that was released contained a different instance of Biomimicry in collaboration with two performers, Dan O’Connor and Sage Pbbbt.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+Link
+</div>
+
+<div slot="right">
+
+[https://tonelist.bandcamp.com/album/biomimicry](https://tonelist.bandcamp.com/album/biomimicry)
+</div>
+</Item>
+
+### Driving License
+
+<Item>
+<div slot="left">
+
+Details
+</div>
+
+<div slot="right">
+
+I currently hold a valid UK driving license.
+</div>
+</Item>
+
+<style>
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        line-height: 0.5em;
+    }
+
+    #address-etc > p {
+        line-height: 2em;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    h3 {
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+    h2 {
+        padding-top: 25px;
+    }
+</style>
+
