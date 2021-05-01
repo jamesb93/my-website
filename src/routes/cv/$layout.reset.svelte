@@ -15,8 +15,8 @@
 	}
 
 	main {
-		min-width: 50%;
-		max-width: 600px;
+		min-width: 30%;
+		max-width: 550px;
 		margin: 0 auto;
 		padding: 15px;
 		padding-top: 50px;

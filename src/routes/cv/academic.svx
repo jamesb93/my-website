@@ -112,7 +112,7 @@ Dr. Alex Harker & Dr. Steven Jan
 
 <div slot="right">
 
-**Bachelor of Arts (Honours)**. *The University of Western Australia*
+**Bachelor of Arts (Honours)**, *The University of Western Australia*
 </div>
 </Item>
 
@@ -173,12 +173,15 @@ Since the start of the FluCoMa project I have been a part of the online communit
 <div>
 </Item>
 
+<div class='pb' />
+
 <Item>
 <div slot="left">
 
 2018-21
 </div>
 <div slot="right">
+
 
 **Research Assistant on the FrameLib Project**
 
@@ -285,6 +288,8 @@ University Choral Society Prizes for Music - *University of Western Australia*
 #### Final Year Project (Univeristy of Huddersfield)
 Tutoring individual students in a 1-on-1 capacity to provide feedback and guide them through the process of creating a substantial creative project. Through this module I have advised on a variety of music genres including classical orchestral composition, soul, hip-hop, metal, punk, progressive rock and electronic music.
 
+<div class='pb' />
+
 #### DMP1 - Desktop Music Production (Univeristy of Huddersfield)
 Delivering seminars and lectures on techniques and technologies for computer-based music production including sequencing, sampling, arrangement, and a variety of sound processing techniques. A range of assessments, both technically or creatively focused develops their critical listening and production skills and seminars support them in applying these techniques to a range of individual aesthetics.
 
@@ -303,6 +308,8 @@ Providing seminars covering a wide range of electronic music genres. The seminar
 
 [*Biomimicry: Analysis Of A Corpus-Based Interactive Improvisational System*](https://quod.lib.umich.edu/cgi/p/pod/dod-idx/biomimicry-analysis-of-a-corpus-based-interactive.pdf?c=icmc;idno=bbp2372.2017.027;format=pdf) -
 Proceeds of the 2017 International Computer Music Conference, Shanghai.
+
+<div class='pb' />
 
 ## Presentations
 
@@ -470,18 +477,6 @@ Assistant to Dr. Christ Tonkin in the recording sessions for *Transformations*
 <div slot="right">
 
 *Annealing Strategies*, for simulated annealing system.
-</div>
-</Item>
-
-<Item>
-<div slot="left">
-
-2017
-</div>
-
-<div slot="right">
-
-*Intratone*, for trumpet and electronics.
 </div>
 </Item>
 
@@ -698,6 +693,8 @@ West Australian Symphony Orchestra: Young Composer Project
 </div> 
 </Item>
 
+<div class='pb' />
+
 ## Other Relevant Skills
 
 ### Programming
@@ -800,14 +797,12 @@ I currently hold a valid UK driving license.
         margin: 0;
         text-align: justify;
     }
+    
+    h2 {padding-top: 19px}
 
     h3 {
         font-weight: bold;
         padding-top: 10px;
-    }
-
-    h2 {
-        padding-top: 25px;
     }
 
     h4 {
@@ -816,10 +811,8 @@ I currently hold a valid UK driving license.
     }
 
     @media print {
-        .pagebreak {
-            clear: both; 
+        .pb {
             page-break-before: always; 
         }
     }
 </style>
-
