@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div align="center">
-	<img src="https://f000.backblazeb2.com/file/jb-website/img/personal.jpg" alt="Myself, Niamh Dell and Jameson Feakes">
+	<img src="/img/personal.jpg" alt="Myself, Niamh Dell and Jameson Feakes">
 	<p id="caption">Photography by <a href="https://www.oliviabettinadavies.com">Olivia Davies</a> - (she is also a great composer!)</p>
 </div>
 
@@ -17,6 +17,8 @@
 <p>
 	If you want to get into contact with me feel free to send me an e-mail at <a href="mailto:jamesbradbury93@gmail.com" id="contact">jamesbradbury93@gmail.com.</a>
 </p>
+
+<a class="hidden" href="/cv/academic">academic cv</a>
 
 <style>
 	img {
@@ -32,5 +34,9 @@
 	#contact {
 		color: rgb(61, 61, 61);
 		font-weight: bold;
+	}
+
+	.hidden {
+		display: none;
 	}
 </style>
