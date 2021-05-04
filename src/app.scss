@@ -17,7 +17,11 @@ html {
 }
 
 nav {
-font-family: $font-mono;
+	font-family: $font-mono;
+}
+
+nav > a:visited {
+	color: black;
 }
 
 body {
