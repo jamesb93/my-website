@@ -8,13 +8,14 @@
 
 <style>
     .container {
+        box-shadow: 3px -3px 0 0 #595958;
+        border: 1px solid #000000;
         position: relative;
-        width: 100%;
+        width: fit-content;
         display: flex;
         background-color: #fff;
-        border-radius: 5px;
-        border-radius: 5px;
-        padding: 20px;
+        padding: 12px;
+        margin: 20px;
         z-index: 1;
         -webkit-transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
         transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);

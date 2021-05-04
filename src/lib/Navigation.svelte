@@ -22,12 +22,4 @@
 .hide {
     display: none;
 }
-
-a {
-    color: rgb(127, 127, 127)
-}
-	
-a:hover {
-    color: rgb(178, 178, 178)
-}
 </style>

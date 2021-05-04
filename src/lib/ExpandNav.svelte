@@ -14,15 +14,21 @@
 
 <style>
 
-nav {
-    background-color: rgba(255, 255, 255, 0.199);
+.links {
+    background-color: rgba(255, 255, 255, 0.906);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .links > a {
     font-size: 24px;
     display: block;
     text-align: center;
+    margin: 0 auto;
     margin: 20px;
+    max-width: 50%;
+    align-self: center;
 }
 
 .hide {

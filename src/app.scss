@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=Inconsolata&display=swap');
 $font: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Fira Sans", "Droid Sans", Arial, sans-serif;
+$font: 'Inconsolata', monospace;
+$font-mono: 'IBM Plex Mono', monospace;
+$font: 'IBM Plex Sans', sans-serif;
 $bg-color: #fdfdfd;
 
 html {
@@ -10,6 +14,10 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	box-sizing: border-box;
+}
+
+nav {
+font-family: $font-mono;
 }
 
 body {
@@ -35,7 +43,11 @@ h1 {
 }
 
 a {
-	color: rgb(80, 0, 209);
+	color: grey;
+}
+
+a:visited {
+	color:rgb(80, 0, 209)
 }
 
 a:link {
@@ -44,12 +56,10 @@ a:link {
 	text-decoration: none;
 }
 
-a:visited {
-	color: rgb(80, 0, 209);
-}
-
-a:hover {
+a:hover, a:visited:hover, #contact:hover {
 	text-decoration: underline;
+	background-color:rgb(134, 78, 225);
+	color: white;
 }
 
 #svelte {

@@ -6,15 +6,14 @@
 
 	const links = [
 		'projects', 
-		'collaboration',
 		'code', 
 		'publications',
 		'performances'
 	]
 
-	const breakpoint = 1000;
+	const breakpoint = 1280;
 	let w;
-	let expand = false;
+	$: expand = w > breakpoint;
 
 	function handleExpand(){
 		expand = !expand
@@ -29,15 +28,19 @@
 			<a href='/'>james bradbury</a>
 		</div>
 	
-		{#if w < breakpoint}
+		{#if w <= breakpoint}
 			<div class="btn-container" transition:fly class:hide={w >= breakpoint}>
 				<Hamburger func={handleExpand}/>
 			</div>
 		{:else}
-			<Navigation links={links} hide={w < breakpoint}/>
+			<Navigation links={links} hide={ w <= breakpoint } />
 		{/if}
 	</div>
-	<ExpandNav links={links} func={() => expand = false} hide={!expand} />
+	<ExpandNav 
+	links={links} 
+	func={ () => expand = false } 
+	hide={ !expand || w > breakpoint } 
+	/>
 </header>
 
 <style>
@@ -54,10 +57,8 @@
 	.top {
 		display: flex;
         flex-direction: row;
-        justify-content: space-around;
-		flex-wrap: none;
-		width: 50%;
-        height: 50px;
+        justify-content: space-between;
+		width: 60%;
 		margin: 0 auto;
 	}
 
@@ -69,6 +70,10 @@
     .name > a {
         font-weight: bold;
     }
+
+	.name > a:hover {
+		color: white;
+	}
 
 	.hide {
 		display: none;

@@ -26,14 +26,21 @@
 - Designing lecture materials for electronic music modules at undergraduate level.
 - One-to-one tutoring for final year undergraduate students.
 - Leading seminars across desktop music production, sonic arts theory and practice.
+- Marking and feedback
 
-My undergraduate teaching at Huddersfield began in 2017. While employed by the university I have consistenly been given additional responsibility and work delivering content for modules as well as designing materials for them independently.
+My undergraduate teaching at Huddersfield began in 2017. While employed by the university I have consistently been given additional responsibility and work delivering content for modules as well as designing materials for them independently.
+
+**Administration and other responsibilities**, *including*: 
+- Personal tutor to 6 final year undergraduate students
+- Liaising with module leaders and line managers over student concerns
 
 ### Programming
 
 **Freelance Programming and Creative Coding**
 
-I have been contracted as a programmer in a number of capacties working with several different technologies. These include C++, Python, Max and web-based programming using JavaScript and related frameworks. Jobs have included developing custom documentation generation for C++ libraries, creating Max "packages" for facilitating learning and dissemination and bespoke systems for creative projects. The most recent project I am currently working on is a web-based application for enabling remote, distributed musical interactions and events with [Mark Fell](http://markfell.com) and [Rian Treanor](https://riantreanor.bandcamp.com).
+I have been contracted as a programmer and creative coder to work with several different technologies. These include C++, Python, Max and web-based programming using JavaScript and a number of frameworks. Jobs have included developing custom documentation generation for C++ libraries, creating Max "packages" and creating bespoke systems for creative projects. I also have taken the role of a private tutor, teaching Max, machine listening/learning and embedded programming to independent artists who want to expand their skill sets.
+
+<div class='pb' />
 
 ## Education
 
@@ -45,7 +52,7 @@ I have been contracted as a programmer in a number of capacties working with sev
 
 <div slot="right">
 
-**PhD Music (writing up)** , *The University of Hudderfsield*
+**PhD Music (Submission planned June/July 2021)** , *The University of Huddersfield*
 </div>
 </Item>
 
@@ -120,14 +127,27 @@ Dr. Alex Harker & Dr. Steven Jan
 <Item>
 <div slot="left">
 
-2018-21
+Ongoing
+</div>
+<div slot="right">
+
+**Writing and Publishing Articles**
+
+I have experience writing and publishing articles and delivering presentations on my own research as both a Master's and PhD student (specific papers and presentations are listed in Publications and Presentations respectively).
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2021
 </div>
 
 <div slot="right">
 
 **Intersymmetric Works**
 
-This is an ongoing project with [Mark Fell](http://www.markfell.com/wiki/) and [Rian Treanor](https://riantreanor.bandcamp.com)  that has successfully received two different sources of funding from [No Bounds](http://noboundsfestival.co.uk) and [rewire](https://www.rewirefestival.nl) festival. It is currently tendering additional funding via the Arts Council Projects Grant .The project is focused on creating distributed and decentralised methods for collaborating and learning music. I am responsible for creating the web-based application, which allows people to join "rooms" and interact wth a variety of rhythmic transformations and synthesis modules together, regardless of their location.
+This is an ongoing project with [Mark Fell](http://www.markfell.com/wiki/) and [Rian Treanor](https://riantreanor.bandcamp.com)  that has successfully received two different sources of funding through application from [No Bounds](http://noboundsfestival.co.uk) and [rewire](https://www.rewirefestival.nl) festival. It is currently tendering additional funding via the Arts Council Projects Grant. The project is focused on creating distributed and decentralised methods for collaborating and learning music. I am responsible for creating the web-based application, which allows people to join "rooms" and interact wth a variety of rhythmic transformations and synthesis modules together across the world.
 <div>
 </Item>
 
@@ -155,7 +175,7 @@ I worked as a contracted programmer for a research project at Hong Kong Baptist 
 
 **ReaCoMa**
 
-ReaCoMa began as a personal project to port the Fluid Corpus Manipulation (FluCoMa) tools to REAPER through the ReaScript API. I was given funding internally at the University of Huddersfield  to open source the project, create documentation, a video tutorial series (https://www.youtube.com/channel/UC24VF9uE4sU75xI3U4K6EoA), and make the tool more widely accessible to researchers who might not be proficient with Max, SuperCollider or Pure Data for which there are existing versions of the FluCoMa tools. https://www.reacoma.xyz
+ReaCoMa began as a personal project to port the Fluid Corpus Manipulation (FluCoMa) tools to REAPER through the ReaScript API. This allows those machine listening and learning algorithms to be used directly in composition as well as exposing a set of APIs so that others can leverage the library in their own creative workflow. I was given funding internally at the University of Huddersfield  to open source the project, create documentation, a video tutorial series (https://www.youtube.com/channel/UC24VF9uE4sU75xI3U4K6EoA), and make the tool more widely accessible to researchers who might not be proficient with Max, SuperCollider or Pure Data for which there are existing versions of the FluCoMa tools. https://www.reacoma.xyz
 <div>
 </Item>
 
@@ -169,30 +189,27 @@ ReaCoMa began as a personal project to port the Fluid Corpus Manipulation (FluCo
 
 **FluCoMa Community**
 
-Since the start of the FluCoMa project I have been a part of the online community involved in providing feedback and generating discussion around the tools produced by the FluCoMa team at the University of Huddersfield. Through this community I have submitted numerous patches and engaged in discourse around user experience, interface design and electronic music composition. More information here: http://www.flucoma.org
+Since the start of the FluCoMa project I have been a part of the online community involved in providing feedback and generating discussion around the tools produced by the FluCoMa team at the University of Huddersfield. Through this community I have submitted numerous patches and engaged in discourse around user experience, interface design and electronic music composition. ReaCoMa has had significant impact and reach through this medium, and many of the commissioned composers have used my patches and tools built around the FluCoMa ecosystem. More information here: http://www.flucoma.org
 <div>
 </Item>
-
-<div class='pb' />
 
 <Item>
 <div slot="left">
 
-2018-21
+2018-20
 </div>
 <div slot="right">
 
-
 **Research Assistant on the FrameLib Project**
 
-I was employed to create documentation and a tutorial learning system allowing musicians with a wide range of competencies to become proficient with FrameLib. FrameLib allows composers and creative coders to create custom digital signal processing routines with frame-based processing. The tutorials were created in Max and have been distributed as a package to a large global community. More information here: https://github.com/alexharker/FrameLib.
+I was employed to create documentation and a tutorial learning system allowing musicians with a wide range of competencies to become proficient with FrameLib. FrameLib allows composers and creative coders to create custom digital signal processing routines with frame-based processing such as for granular synthesis, spectral processing and audio descriptors. The tutorials were created in Max and have been distributed as a package to a large global community. More information here: https://github.com/alexharker/FrameLib.
 <div>
 </Item>
 
 <Item>
 <div slot="left">
 
-2018-21
+2016
 </div>
 
 <div slot="right">
@@ -203,11 +220,7 @@ I spent 10 days hosted at the University of Limerick’s Spatialization and Audi
 <div>
 </Item>
 
-
-
-
-
-
+<div class='pb' />
 
 ## Awards and Funding
 
@@ -285,18 +298,16 @@ University Choral Society Prizes for Music - *University of Western Australia*
 
 ## Teaching Experience
 
-#### Final Year Project (Univeristy of Huddersfield)
+#### Final Year Project (University of Huddersfield)
 Tutoring individual students in a 1-on-1 capacity to provide feedback and guide them through the process of creating a substantial creative project. Through this module I have advised on a variety of music genres including classical orchestral composition, soul, hip-hop, metal, punk, progressive rock and electronic music.
 
-<div class='pb' />
-
-#### DMP1 - Desktop Music Production (Univeristy of Huddersfield)
+#### DMP1 - Desktop Music Production (University of Huddersfield)
 Delivering seminars and lectures on techniques and technologies for computer-based music production including sequencing, sampling, arrangement, and a variety of sound processing techniques. A range of assessments, both technically or creatively focused develops their critical listening and production skills and seminars support them in applying these techniques to a range of individual aesthetics.
 
-#### SAE1 - Sonic Arts and Electronica (Univeristy of Huddersfield)
-Delivering seminars that introduce students to a broad range of electronic music and ways of thinking about sound as a creative medium. Various genres were covered from IDM, EDM, acousmatic and sound installation work. For each student, the unit culminates in the submission of a creative portfolio that encourages them to demonstrate the use of technology in imaginative ways. Throughout the year, I provide feedback to them and advise how they can develop their creative workflow, fostering their development as artists.
+#### SAE1 - Sonic Arts and Electronica (University of Huddersfield)
+Delivering seminars that introduce students to a broad range of electronic music styles and genres and technologies (Max, VCV Rack) in sonic art. Various genres are covered from IDM, EDM, acousmatic and sound installation work. includes For each student, the module culminates in the submission of a creative portfolio that encourages them to demonstrate the use of technology in imaginative ways. Throughout the year, I provide feedback to them and advise how they can develop their creative workflow, fostering their development as artists.
 
-#### SAE2 - Sonics Arts and Electronica (Univeristy of Huddersfield)
+#### SAE2 - Sonics Arts and Electronica (University of Huddersfield)
 This is a follow on module from SAE1 and is designed for students who completed SAE1 to take on more responsibility developing their practice, while giving them the opportunity to explore more personal aesthetic and creative goals across a variety of electronic based genres. Seminars delved into more complicated or hard to grasp subject matter ranging from sound design, studio practice and compositional technique. I also wrote a series of 6 lectures focusing on topics such as glitch aesthetics, interactive computer-based composition, genre-breaking artists in electronic music and developing creative workflow
 
 #### MUSC1055 - Electronic Music: Methods and Means (University of Western Australia)
@@ -308,8 +319,6 @@ Providing seminars covering a wide range of electronic music genres. The seminar
 
 [*Biomimicry: Analysis Of A Corpus-Based Interactive Improvisational System*](https://quod.lib.umich.edu/cgi/p/pod/dod-idx/biomimicry-analysis-of-a-corpus-based-interactive.pdf?c=icmc;idno=bbp2372.2017.027;format=pdf) -
 Proceeds of the 2017 International Computer Music Conference, Shanghai.
-
-<div class='pb' />
 
 ## Presentations
 
@@ -360,64 +369,6 @@ Oct 2017
 *Biomimicry: Analysis Of A Corpus-Based Interactive Improvisational System*, International Computer Music Conference, Shanghai.
 </div>
 </Item> 
-
-## Selected Technical Experience
-
-<Item>
-<div slot="left">
-
-2020
-</div>
-
-<div slot="right">
-
-**Programmer for Andie Brown's Alucita II Installation**
-
-Created a Max-based system for controlling transducers in order to resonate wine glasses in an installation space. The system was managed through a custom compositional language based on determining the density and spacing of stochastic events.
-</div>
-</Item>
-
-<Item>
-<div slot="left">
-
-2019
-</div>
-
-<div slot="right">
-
-**Technical Crew for the travelling Huddersfield Immersive Surround System**
-
-Planning, rigging and configuring diffusion systems at various universities with a sub-set of speakers from the Huddersfield Immersive Surround System (HISS).
-</div>
-</Item>
-
-<Item>
-<div slot="left">
-
-2017-21
-</div>
-
-<div slot="right">
-
-**Member of the Hudderfsield Immersive Surround System**
-
-Crew member involved in rigging and setting up large-scale diffusion systems (typically 50+ speakers)
-</div>
-</Item>
-
-<Item>
-<div slot="left">
-
-2016
-</div>
-
-<div slot="right">
-
-**Co-engineer for *Transformations* CD**
-
-Assistant to Dr. Christ Tonkin in the recording sessions for *Transformations*
-</div>
-</Item>
 
 ## Selected Compositions
 <Item>
@@ -516,6 +467,8 @@ Assistant to Dr. Christ Tonkin in the recording sessions for *Transformations*
 </div>
 </Item>
 
+<div class='pb' />
+
 ## Selected Performances
 <Item>
 <div slot="left">
@@ -597,7 +550,7 @@ May 2015
 
 <div slot="right">
 
-*Traced Over*, for bowed guitar and electronics. Performed by James Bradbury and Jamesion Feakes at the Perth Institute of Contemporary Art as part of the Totally Huge New Music Festival.
+*Traced Over*, for bowed guitar and electronics. Performed by James Bradbury and Jameson Feakes at the Perth Institute of Contemporary Art as part of the Totally Huge New Music Festival.
 </div>
 </Item> 
 
@@ -693,23 +646,159 @@ West Australian Symphony Orchestra: Young Composer Project
 </div> 
 </Item>
 
-<div class='pb' />
+## Selected Technical Experience
+
+<Item>
+<div slot="left">
+
+2020
+</div>
+
+<div slot="right">
+
+**Programmer for Andie Brown's Alucita II Installation**
+
+Created a Max-based system for controlling transducers in order to resonate wine glasses in an installation space. The system was managed through a custom compositional language based on determining the density and spacing of stochastic events. The system also uses machine listening for pitch tracking to automatically determine the fundamental frequency of glasses.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2019
+</div>
+
+<div slot="right">
+
+**Technical Crew for the travelling Huddersfield Immersive Surround System**
+
+Planning, rigging and configuring diffusion systems at various universities with a sub-set of speakers from the Huddersfield Immersive Surround System (HISS).
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2017-21
+</div>
+
+<div slot="right">
+
+**Member of the Hudderfsield Immersive Surround System**
+
+Crew member involved in rigging and setting up large-scale diffusion systems (typically 50+ speakers)
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2016
+</div>
+
+<div slot="right">
+
+**Co-engineer for *Transformations* CD**
+
+Assistant to Dr. Chris Tonkin in the recording sessions for *Transformations*
+</div>
+</Item>
 
 ## Other Relevant Skills
+
+### Administrative Experience
+<Item>
+<div slot="left">
+
+2021
+</div>
+<div slot="right">
+
+Creative Coding Lab Symposium event organisation including finding speakers, *University of Huddersfield*
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2019-21
+</div>
+<div slot="right">
+
+Huddersfield HackSpace (see https://hudhack.space) creator and organiser, *University of Huddersfield*
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2017-21
+</div>
+<div slot="right">
+
+Relevant teaching administrative work (see Employment)
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+2015
+</div>
+<div slot="right">
+
+Concert planning, development and organisation for composition concerts, *University of Western Australia*
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+Ongoing
+</div>
+<div slot="right">
+
+Client communication through freelance work including invoicing and grant applications
+</div>
+</Item>
 
 ### Programming
 <Item>
 <div slot="left">
 
-Languages
+Language
 </div>
-
 <div slot="right">
 
-C++, Python, Nim, JavaScript
+C++
 
-I have a basic level of experience with C++, evidenced by the development of bespoke tools for music composition. These include a number of Max externals (onecount, plusequals, bufspill) and additional objects for Dr. Alex Harker's *FrameLib* library (fl.info~, fl.reverse~). I possess advanced knowledge in Pythom, using it across a wide range of applications such as computer-aided composition, audio processing, machine learning and for developing my own composition tool [*FTIS*](https://www.github.com/jamesb93/ftis). I am also highly proficient in JavaScript and web-based programming, creating interactive applications, high-performance web socket servers and documentation websites that follows responsive design principles. I've also developed low-level audio processing tools using Nim such as [mosh](https://www/github.com/jamesb93/mosh), a command line utility for turning raw data into audio.
+I have a basic level of experience with C++, evidenced by development of bespoke tools for music composition. These include a number of Max externals (onecount, plusequals, bufspill) and additional objects for Dr. Alex Harker's *FrameLib* library (fl.info~, fl.reverse~). I also have experience working with C and C++ build systems include Cmake.
+</div>
+</Item>
 
+<Item>
+<div slot="left">
+
+Language
+</div>
+<div slot="right">
+
+Python
+
+I have advanced knowledge in Python, using it across a wide range of applications such as computer-aided composition, audio processing, machine learning, machine listening and for developing my own tool for computer-aided composition [*FTIS*](https://www.github.com/jamesb93/ftis). Through this work I have gathered significant experience working with Python toolchains such as pip, poetry, PyPi and good practice for Python module creation.
+</div>
+</Item>
+
+<Item>
+<div slot="left">
+
+Language
+</div>
+<div slot="right">
+
+JavaScript
+
+I am highly proficient in JavaScript for web-based programming in both frontend and backend capacities. This is evidenced by my freelance programming work creating interactive applications, high-performance web-socket servers and bespoke documentation websites that follow responsive design principles. I am highly proficient with Svelte, as well as package managers including npm and yarn.
 </div>
 </Item>
 
