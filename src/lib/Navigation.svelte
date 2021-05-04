@@ -14,9 +14,14 @@
 
 <style>
 
-.links > a {
+a, a:visited, a:link {
+    color:black;
     text-justify: right;
     font-size: 24px;
+}
+
+a, a:visited:hover, a:link:hover {
+    color: white;
 }
 
 .hide {
