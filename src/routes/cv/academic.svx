@@ -85,7 +85,7 @@ Dr. Alex Harker & Dr. Steven Jan
 </div>
 <div slot="right">
 
-**Masters of Music**, *The University of Western Australia*
+**Master of Music**, *The University of Western Australia*
 </div>
 </Item>
 
@@ -164,6 +164,8 @@ This is an ongoing project with [Mark Fell](http://www.markfell.com/wiki/) and [
 I worked as a contracted programmer for a research project at Hong Kong Baptist University. For this project I created a Max package designed to facilitate composition with gesture recognition and data mapping techniques in combination with their newly created "MetaBow". The package is currently in private alpha but will be released later this year in combination with a call for scores.
 <div>
 </Item>
+
+<div class='pb' />
 
 <Item>
 <div slot="left">
@@ -646,6 +648,8 @@ West Australian Symphony Orchestra: Young Composer Project
 </div> 
 </Item>
 
+<div class='pb' />
+
 ## Selected Technical Experience
 
 <Item>
@@ -684,7 +688,7 @@ Planning, rigging and configuring diffusion systems at various universities with
 
 <div slot="right">
 
-**Member of the Hudderfsield Immersive Surround System**
+**Member of the Huddersfield Immersive Surround System**
 
 Crew member involved in rigging and setting up large-scale diffusion systems (typically 50+ speakers)
 </div>
@@ -871,6 +875,10 @@ I currently hold a valid UK driving license.
 </Item>
 
 <style>
+
+    * {
+        font-family: "Helvetica"
+    }
     #header {
         display: flex;
         flex-direction: row;
