@@ -1,10 +1,9 @@
-const sveltePreprocess = require('svelte-preprocess');
-const node = require('@sveltejs/adapter-static');
-const pkg = require('./package.json');
-const { mdsvex } = require('mdsvex');
+import sveltePreprocess from 'svelte-preprocess';
+import node from '@sveltejs/adapter-static';
+import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
-module.exports = {	
+const config = {	
 	extensions: [ '.svelte', '.svx' ],
 	preprocess: [ mdsvex(), sveltePreprocess() ],
 	kit: {
@@ -18,3 +17,5 @@ module.exports = {
 		target: '#svelte',
 	},
 };
+
+export default config;
