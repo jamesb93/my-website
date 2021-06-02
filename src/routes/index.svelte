@@ -15,7 +15,7 @@
 
 
 <p>
-	If you want to get into contact with me feel free to send me an e-mail at <a href="mailto:jamesbradbury93@gmail.com" id="contact">jamesbradbury93@gmail.com.</a>
+	If you want to get into contact with me feel free to send me an e-mail at <a href="mailto:hello@jamesbradbury.xyz" id="contact">hello@jamesbradbury.xyz.</a>
 </p>
 
 <a class="hidden" href="/cv/academic">academic cv</a>
