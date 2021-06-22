@@ -21,8 +21,11 @@
     .writing {
         display: flex;
         flex-direction: column;
-        padding-left: 30px;
-        max-width: 400px;
+        padding-left: 15px;
+        padding-right: 15px;
+        /* max-width: 400px; */
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     :global(img) {

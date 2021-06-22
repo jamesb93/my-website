@@ -13,11 +13,12 @@
 </nav>
 
 <style>
-
 a, a:visited, a:link {
     color:black;
-    text-justify: right;
+    max-width: fit-content;
     font-size: 24px;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
 }
 
 a, a:visited:hover, a:link:hover {

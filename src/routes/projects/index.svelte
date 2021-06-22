@@ -16,13 +16,13 @@ This is a list of several projects I've worked on over the last few years. If yo
     <Project url="intersymmetric">
         <!-- <img src="/img/re.jpg" class="thumb" slot="image" alt="reconstruction-error"/>  -->
         <span class="title" slot="title">Intersymmetric Works</span>
-        <span class="caption" slot="caption">This project is in collaboration with Mark fell, Rian Treanor and Joe Gilmore. Together we created a web-based collaborative sequencer for exploring algorithmic rhythmic transformation and sequencing.</span>
+        <span class="caption" slot="caption">This project is in collaboration with Mark Fell, Rian Treanor and Joe Gilmore. Together we created a web-based sequencer for exploring collaborative algorithmic rhythmic patterns, sound design and creativity.</span>
     </Project>
 
     <Project url="alucita">
         <!-- <img src="/img/re.jpg" class="thumb" slot="image" alt="reconstruction-error"/>  -->
         <span class="title" slot="title">Alucita II</span>
-        <span class="caption" slot="caption">Alucita II is a glass installation by Andie Brown. I helped program the Max patch which manages transduction timing and scheduling for the chorus of glasses.</span>
+        <span class="caption" slot="caption">Alucita II is a glass installation by Andie Brown. I helped program a Max patch that manages transduction operation and scheduling for the chorus of glasses.</span>
     </Project>
 
     <Project url="reconstruction-error">

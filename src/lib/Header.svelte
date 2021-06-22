@@ -2,7 +2,6 @@
 	import Hamburger from './Hamburger.svelte';
 	import Navigation from './Navigation.svelte';
 	import ExpandNav from './ExpandNav.svelte';
-	import { fly } from 'svelte/transition';
 
 	const links = [
 		'projects', 
@@ -15,32 +14,43 @@
 	let w;
 	$: expand = w > breakpoint;
 
-	function handleExpand(){
+	function handleExpand() {
 		expand = !expand
+	}
+
+	function handleWindowClick(e) {
+		const id = e.target.id
+		if (id !== 'expandnav' && id !== 'hamburger') {
+			expand = false
+		}
+	}
+
+	function handleKeyDown(e) {
+		if (e.key === 'Escape')
+			expand = false
 	}
 </script>
 
-<svelte:window bind:innerWidth={w} />
+<svelte:window bind:innerWidth={w} on:click={ handleWindowClick } on:keydown={ handleKeyDown }/>
 
 <header>
 	<div class="top">
-		<div class='name'>
-			<a href='/'>james bradbury</a>
-		</div>
+		<a class='name' href='./'>james bradbury</a>
 	
 		{#if w <= breakpoint}
-			<div class="btn-container" transition:fly class:hide={w >= breakpoint}>
-				<Hamburger func={handleExpand}/>
+			<div class="btn-container" class:hide={w >= breakpoint}>
+				<Hamburger on:click={ handleExpand }/>
 			</div>
 		{:else}
 			<Navigation links={links} hide={ w <= breakpoint } />
 		{/if}
 	</div>
+	{#if expand && w < breakpoint}
 	<ExpandNav 
 	links={links} 
-	func={ () => expand = false } 
-	hide={ !expand || w > breakpoint } 
+	func={ () => expand=false } 
 	/>
+	{/if}
 </header>
 
 <style>
@@ -51,7 +61,7 @@
 		opacity: 0.93;
 		top: 0;
 		padding-top: 20px;
-		z-index: 99;
+		z-index: 200;
 	}
 
 	.top {
@@ -62,17 +72,10 @@
 		margin: 0 auto;
 	}
 
-	.name > a {
+	.name {
         color:rgb(0, 0, 0);
 		font-size: 24px;
-    }
-
-    .name > a {
         font-weight: bold;
-    }
-
-	.name > a:hover {
-		color: white;
 	}
 
 	.hide {

@@ -5,11 +5,14 @@
 </script>
 
 <svelte:window bind:innerWidth={w} />
+<svelte:head>
+	<base target="_blank">
+</svelte:head>
 
 <Header />
 <main class="wrapper">
 	<article class="content">
-		<slot></slot>
+		<slot />
 	</article>
 </main>
 
