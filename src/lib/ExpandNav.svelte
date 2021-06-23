@@ -12,7 +12,7 @@ out:fly={{ y: -150, duration: 300 }}
 
 >
     {#each links as link}
-        <a on:click={func} href=/{link}>
+        <a target='_top' on:click={func} href=/{link}>
             {link}
         </a>
     {/each}
