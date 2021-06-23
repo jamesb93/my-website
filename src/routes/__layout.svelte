@@ -29,7 +29,7 @@
 
 	main {
 		min-width: 30%;
-		max-width: 550px;
+		max-width: 75ch;
 		margin: 0 auto;
 		padding: 15px; 
 		padding-top: 100px;

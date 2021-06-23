@@ -35,7 +35,7 @@
 
 <header>
 	<div class="top">
-		<a class='name' href='./'>james bradbury</a>
+		<a class='name' href='/'>james bradbury</a>
 	
 		{#if w <= breakpoint}
 			<div class="btn-container" class:hide={w >= breakpoint}>
