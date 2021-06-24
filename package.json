@@ -12,8 +12,6 @@
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
-		"prettier": "^2.3.1",
-		"prettier-plugin-svelte": "^2.3.1",
 		"sass": "^1.35.1",
 		"svelte": "^3.38.3",
 		"svelte-preprocess": "^4.7.3",
