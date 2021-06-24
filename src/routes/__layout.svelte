@@ -5,31 +5,22 @@
 </script>
 
 <svelte:window bind:innerWidth={w} />
-<svelte:head>
-	<base target="_blank">
-</svelte:head>
 
 <Header />
 <main class="wrapper">
-	<article class="content">
-		<slot />
-	</article>
+	<slot />
 </main>
 
 <style>
 	.wrapper {
 		display: flex;
 		flex-direction: column;
-	}
-
-	.content {
 		justify-content: center;
-		height: 100%;
+		margin-top: 30px;
 	}
 
 	main {
-		min-width: 30%;
-		max-width: 75ch;
+		max-width: 130ch;
 		margin: 0 auto;
 		padding: 15px; 
 		padding-top: 100px;

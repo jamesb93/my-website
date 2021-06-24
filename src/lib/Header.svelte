@@ -34,23 +34,23 @@
 <svelte:window bind:innerWidth={w} on:click={ handleWindowClick } on:keydown={ handleKeyDown }/>
 
 <header>
-	<div class="top">
-		<a class='name' href='/'>james bradbury</a>
-	
-		{#if w <= breakpoint}
-			<div class="btn-container" class:hide={w >= breakpoint}>
-				<Hamburger on:click={ handleExpand }/>
-			</div>
-		{:else}
-			<Navigation links={links} hide={ w <= breakpoint } />
-		{/if}
+	<div class='top'>
+		<a class='name' href='/'>james bradbury | sound + code</a>
+		<Navigation links={links} hide={ false } />
 	</div>
-	{#if expand && w < breakpoint}
+	
+		<!-- {#if w <= breakpoint} -->
+			<!-- <div class="btn-container" class:hide={w >= breakpoint}> -->
+				<!-- <Hamburger on:click={ handleExpand }/> -->
+			<!-- </div> -->
+		<!-- {:else} -->
+		<!-- {/if} -->
+	<!-- {#if expand && w < breakpoint}
 	<ExpandNav 
 	links={links} 
 	func={ () => expand=false } 
 	/>
-	{/if}
+	{/if} -->
 </header>
 
 <style>
@@ -60,22 +60,36 @@
         width: 100%;
 		opacity: 0.93;
 		top: 0;
-		padding-top: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
 		z-index: 200;
+		border-bottom: 1px solid rgba(222, 222, 222, 0.386);
 	}
 
 	.top {
 		display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-		width: 60%;
+        flex-direction: column;
+        justify-content: center;
+		text-align: center;
+		gap: 10px;
 		margin: 0 auto;
 	}
 
 	.name {
         color:rgb(0, 0, 0);
-		font-size: 24px;
+		font-size: 30px;
         font-weight: bold;
+		text-decoration: none;
+		max-width: fit-content;
+		margin: 0 auto;
+		padding: 10px;
+		white-space: nowrap;
+		text-align: center;
+	}
+
+	.name:hover {
+		text-decoration: underline;
 	}
 
 	.hide {

@@ -30,17 +30,6 @@ Work in progress can be found here: <a href="https://www.distrib.xyz">www.distri
     <h2 id="alucita">Alucita II</h2>
 </a>
 
-<p>
-    Alucita II is an installation artwork by Andie Brown. For this project I helped Andie by creating a suite of tools in Max that would enable more complex methods of musical control over transducers attached to wine glasses. One of her aims was to be able to explore the different harmonic resonances of glasses which could be activated through this hardware and having that synchronised to formal control over the music. Given these interests, I built Andie a relatively generic set of tools for dispensing commands to glasses based on a priority system, alongside synthesis modules that integrated tightly with these. 
-</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OwzkNA4dwNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>Technologies: Max</p>
-
-<h2 id="metabow-toolkit">MetaBow Toolkit</h2>
-<p>As part of a larger research project at the Hong Kong Baptist University, I was contracted to produce a set of tools in Max to help composers and experienced music technologists engage with gesture recognition and mapping tasks. This was designed for their currently 'private alpha' MetaBow hardware.</p>
-<p>Technologies: Max</p>
-<p><a href="https://github.com/jamesb93/metabow-toolkit">https://github.com/jamesb93/metabow-toolkit</a></p>
-
 <style>
     h2 {
         padding-top: 15px;

@@ -2,8 +2,11 @@
     import Waveform from "$lib/Waveform.svelte";
 </script>
 
+<h1>Stitch/Strata</h1>
+
+
 <Waveform 
-title="Stitch/Strata"
+title=''
 file="/static/audio/StitchStrata.mp3"
 buffer="/static/waveforms/StitchStrata.dat"
 />

@@ -15,7 +15,7 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 	box-sizing: border-box;
 	color: rgba(0, 0, 0, 0.8);
-
+	text-align: justify;
 }
 
 body {
@@ -39,23 +39,19 @@ h1 {
 	font-weight: bold;
 }
 
-a {
-	color: grey;
-}
-
-a:visited {
-	color:rgb(80, 0, 209)
+a, a:visited {
+	color: rgb(61, 61, 61);
+	text-decoration: underline;
 }
 
 a:link {
-	color: rgb(80, 0, 209);
 	background-color: transparent;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:hover, a:visited:hover, #contact:hover {
 	text-decoration: underline;
-	background-color:rgb(134, 78, 225);
+	background-color: rgb(61, 61, 61);
 	color: white;
 }
 

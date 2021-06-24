@@ -1,10 +1,5 @@
 <h1>Reconstruction Error</h1>
 
-<div class="img-box">
-    <img src="https://f000.backblazeb2.com/file/jb-website/img/re.jpg">
-    <p>Artwork made by the wonderful <a target="_blank" href="https://www.angelaguyton.com">Angela Guyton</a></p>
-</div>
-
 <p>
     Reconstruction Error is an album of works created with a combination of databending, machine listening and machine learning. I wrote <a href="https://boblsturm.github.io/aimusic2020/papers/CSMC__MuMe_2020_paper_6.pdf">an article</a> and gave an online presentation at the 2020 AI Music Creativity Conference that discusses how these technologies are at work throughout the album.
 </p>

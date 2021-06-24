@@ -13,19 +13,29 @@
 </nav>
 
 <style>
-a, a:visited, a:link {
-    color:black;
-    max-width: fit-content;
-    font-size: 24px;
-    padding-left: 2.5px;
-    padding-right: 2.5px;
-}
 
-a, a:visited:hover, a:link:hover {
-    color: white;
-}
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        white-space: nowrap;
+    }
 
-.hide {
-    display: none;
-}
+    a, a:visited, a:link {
+        color:black;
+        max-width: fit-content;
+        font-size: 24px;
+        padding: 3px;
+        text-decoration: none;
+    }
+
+    a, a:visited:hover, a:link:hover {
+        color: white;
+        text-decoration: underline;
+
+    }
+
+    .hide {
+        display: none;
+    }
 </style>
