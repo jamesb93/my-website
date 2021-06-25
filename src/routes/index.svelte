@@ -9,12 +9,10 @@
 
 <div id='spiel'>
 	<p>
-		I am a composer and creative-coder from Perth, Western Australia. I currently reside in the North of the UK. I enjoy working with programming in my practice and harnessing the computer to find, organise and create taxonomies of corpora through machine listening and learning. Currently I am a PhD student under the supervision of <a target="_blank" href="http://www.alexanderjharker.co.uk">Alex Harker</a> and <a target="_blank" href="https://pure.hud.ac.uk/en/persons/steven-jan">Steven Jan</a> at the University of Huddersfield.
+		I am a composer and creative-coder from Perth, Western Australia. I currently reside in Northern England. I enjoy working programming in my practice and harnessing the computer to find and organise audio-samples through machine listening and learning. Currently I am a PhD student under the supervision of <a target="_blank" href="http://www.alexanderjharker.co.uk">Alex Harker</a> and <a target="_blank" href="https://pure.hud.ac.uk/en/persons/steven-jan">Steven Jan</a> at the University of Huddersfield.
 
 		I also run the <a target="blank" href="https://www.hudhack.space">Creative Coding Hackspace</a>, a weekly event where we gather to discuss code, share works in progress or hack together ideas collaboratively.
 	</p>
-
-
 	<p>
 		If you want to get into contact with me feel free to send me an e-mail at <a href="mailto:hello@jamesbradbury.xyz" id="contact">hello@jamesbradbury.xyz.</a>
 	</p>

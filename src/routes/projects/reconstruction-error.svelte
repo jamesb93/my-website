@@ -14,24 +14,6 @@
 <iframe height="256" width="1000" src="https://www.youtube.com/embed/-FNO0QovfsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <style>
-
-    .img-box {
-        float: left;
-        max-width: 45%;
-        margin-right: 10px;
-
-    }
-
-    .img-box > p {
-        font-style: italic;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .img-box > img {
-        max-width: 100%;
-    }
-
     iframe {
         max-width: 100%;
         padding-top: 10px;

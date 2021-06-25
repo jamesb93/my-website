@@ -13,5 +13,6 @@
         display: block;
         margin: 0 auto;
         padding-top: 10px;
+        max-width: 100%;
     }
 </style>
