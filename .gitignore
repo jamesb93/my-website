@@ -3,5 +3,4 @@ node_modules
 /.svelte
 /build
 /functions
-/static/audio
 .svelte-kit
