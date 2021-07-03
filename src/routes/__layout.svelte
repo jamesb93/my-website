@@ -19,6 +19,7 @@ import Hamburger from '$lib/Hamburger.svelte';
 		{link : '/publications', text: 'Publications'},
 	]
 	const projects = [
+		{link: '/projects/time-diagram', text: 'Time Diagram'},
 		{link: '/projects/interferences', text: 'Interferences'},
 		{link: '/projects/intersymmetric', text: 'Intersymmetric Works'},
 		{link: '/projects/alucita', text: 'Alucita II'},
@@ -61,7 +62,7 @@ import Hamburger from '$lib/Hamburger.svelte';
 			Projects
 		</div>
 
-		<div class='nav-list' transition:slide>
+		<div class='nav-list projects' transition:slide>
 			{#each projects as pj}
 			<a 
 			class='sidebar-link project' 
@@ -112,6 +113,11 @@ import Hamburger from '$lib/Hamburger.svelte';
 		padding-top: 10px;
 		padding-bottom: 10px;
 		gap: 3px;
+	}
+
+	.projects {
+		gap: 6px;
+		text-align: left;
 	}
 
 	.sidebar-link {
