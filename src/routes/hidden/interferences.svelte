@@ -1,8 +1,8 @@
-<script>
-    import Waveform from '$lib/Waveform.svelte'
-</script>
-
 <h1>Interferences</h1>
+
+<p>
+    Interferences is my coming in to contact with electromagnetic sounds, ever-present in the world around us but only detectable to our ears through induction microphones and equipment. Recording several hours of such sounds, I then deployed machine listening techniques to organise, structure and suggest to me ways in which these glacial, yet detailed and intricate sound worlds could merge and meld with each other. The two tracks in this album are the result of this process, and the dialogue between my intuitions and the computer’s interpreting of this rich sound world.
+</p>
 
 <div id='music-container'>
 

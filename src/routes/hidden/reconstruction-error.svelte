@@ -10,6 +10,10 @@
 
 <h1>Reconstruction Error</h1>
 
+<p>
+    Reconstruction Error focuses on the harnessing of microscopic clicks, fuzzes and glitches harvested from my converting raw data on my computer into audio files. The album is an artefact, and a momentary capture of my engagement with these sounds — drawing to the foreground the ephemeral and gentle nature that is embedded in the unrelenting detritus produced by computers.
+</p>
+
 <div id='music-container'>
     {#each tunes as tune}
     <div id='item'>
