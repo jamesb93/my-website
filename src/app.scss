@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 $font: 'Inconsolata', monospace;
 $font-mono: 'IBM Plex Mono', monospace;
 $bg-color: white;
 
 html {
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Segoe UI", Roboto, Ubuntu, sans-serif;
+	// font-family: 
+	font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Segoe UI", Roboto, Ubuntu, sans-serif;
 	background: $bg-color;
 	font-size: 13px;
 	line-height: 1.35em;
