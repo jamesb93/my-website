@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-$font: 'Inconsolata', monospace;
 $font-mono: 'IBM Plex Mono', monospace;
 $bg-color: white;
 
@@ -7,7 +6,7 @@ html {
 	// font-family: 
 	font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Segoe UI", Roboto, Ubuntu, sans-serif;
 	background: $bg-color;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 1.35em;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -63,6 +62,6 @@ code {
 }
 
 p {
-	line-height: 1.8;
+	line-height: 1.75;
 }
 
