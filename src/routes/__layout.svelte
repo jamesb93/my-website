@@ -21,7 +21,7 @@ import Hamburger from '$lib/Hamburger.svelte';
 	const projects = [
 		{link: '/projects/time-diagram', text: 'Time Diagram'},
 		{link: '/projects/interferences', text: 'Interferences'},
-		{link: '/projects/intersymmetric', text: 'Intersymmetric Works'},
+		{link: '/projects/intersymmetric', text: 'Intersymmetric'},
 		{link: '/projects/alucita', text: 'Alucita II'},
 		{link: '/projects/reconstruction-error', text: 'Reconstruction Error'},
 		{link: '/projects/biomimicry', text: 'Biomimicry'},
@@ -35,7 +35,7 @@ import Hamburger from '$lib/Hamburger.svelte';
 	<!-- NAVIGATION -->
 	<div class='navigation'>
 		<div id='header'>
-			<a id='title'>james bradbury</a>
+			<a id='title' href='/'>james bradbury</a>
 			<div id='subtitle'>sound + code</div>
 		</div>
 
