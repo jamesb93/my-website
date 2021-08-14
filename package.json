@@ -12,17 +12,17 @@
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
-		"sass": "^1.35.1",
-		"svelte": "^3.38.3",
-		"svelte-preprocess": "^4.7.3",
-		"vite": "^2.3.8"
+		"sass": "^1.37.5",
+		"svelte": "^3.42.1",
+		"svelte-preprocess": "^4.7.4",
+		"vite": "^2.4.4"
 	},
 	"type": "module",
 	"engines": {
 		"node": ">= 12.17.0"
 	},
 	"dependencies": {
-		"mdsvex": "^0.9.7",
+		"mdsvex": "^0.9.8",
 		"peaks.js": "^0.24.1",
 		"pts": "^0.10.6",
 		"tone": "^14.7.77"
