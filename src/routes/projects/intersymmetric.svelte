@@ -16,6 +16,10 @@
 url='intersymmetric'
 />
 
+<Video
+url='intersymmetric-2'
+/>
+
 <p>
     The code for the frontend is available <a target='_blank' href='https://github.com/jamesb93/intersymmetric'>here</a>.
 </p>
