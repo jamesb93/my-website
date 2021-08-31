@@ -1,4 +1,4 @@
-<h2>Alucita</h2>
+<h1>Alucita</h1>
 
 <p>
     Alucita II is an installation by Andie Brown, in which I contributed by creating a suite of Max-based tools enabling control of transducers attached to wine glasses. Andie wanted to be able to explore different harmonic combinations and resonances of her glass ensemble, and to codify her findings into synchronised formal structures. I built Andie a framework of objects and abstractions for dispensing commands to glasses based on a priority system, alongside synthesis modules that integrated with these tightly. 

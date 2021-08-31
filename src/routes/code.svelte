@@ -6,6 +6,12 @@
 
 <p>This page contains information and any relevant links to code I’ve been involved in making or made myself. Most if not all this code is available at <a href="https://www.github.com/jamesb93">my github</a> so please dig deeper and feel free to ask any questions via my e-mail.</p>
 
+<h2 id="reacoma">ReaCoMa</h2>
+<p>ReaCoMa is set of bindings to <a href="https://www.flucoma.org">FluCoMa’s</a> ‘toolbox 1’ algorithms in REAPER. ReaCoMa brings several segmentation and decomposition algorithms which can be applied to creative deconstruction, manipulation and transformation all within your favourite DAW.</p>
+<p>Language(s): Lua</p>
+<p><a href="https://www.reacoma.xyz">https://www.reacoma.xyz</a></p>
+<p><a href="https://www.github.com/jamesb93/reacoma">https://www.github.com/jamesb93/reacoma</a></p>
+
 <h2 id="ftis">FTIS</h2>
 <p>FTIS is a Python-based framework for orchestrating complex machine listening and machine learning tasks for the purposes of computer-aided composition. It provides a interface that despite being simple and intuitive is flexible. It draws on the excellent work of other projects such as the <a href="https://www.flucoma.org">Fluid Corpus Manipulation project</a>, <a href="">scikit-learn</a> and the wonderful community at <a href="https://discourse.flucoma.org">https://discourse.flucoma.org.</a></p>
 <p>Language(s): Python 3.8+</p>
@@ -16,11 +22,6 @@
 <p>Language(s): Python 3.8</p>
 <p><a href="https://github.com/jamesb93/reathon">https://github.com/jamesb93/reathon</a></p>
 
-<h2 id="reacoma">ReaCoMa</h2>
-<p>ReaCoMa is set of bindings to <a href="https://www.flucoma.org">FluCoMa’s</a> ‘toolbox 1’ algorithms in REAPER. ReaCoMa brings several segmentation and decomposition algorithms which can be applied to creative deconstruction, manipulation and transformation all within your favourite DAW.</p>
-<p>Language(s): Lua</p>
-<p><a href="https://www.reacoma.xyz">https://www.reacoma.xyz</a></p>
-<p><a href="https://www.github.com/jamesb93/reacoma">https://www.github.com/jamesb93/reacoma</a></p>
 
 <h2 id="python-flucoma">python-flucoma</h2>
 <p>These are native-ish bindings for Python 3.8+ of the <a href="https://www.flucoma.org">FluCoMa</a> project’s CLI binaries. The bindings offer a functional programming interface to the algorithms which suits the paradigm of chaining together different processes well.</p>

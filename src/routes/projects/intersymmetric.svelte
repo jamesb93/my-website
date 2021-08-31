@@ -2,7 +2,7 @@
     import Video from '$lib/Video.svelte';
 </script>
 
-<h2>Intersymmetric</h2>
+<h1>Intersymmetric</h1>
 
 <p>
     Intersymmetric Sequencer 1 is an online multiplayer drum machine that I built with <a target='_blank' href='http://www.markfell.com/wiki/'>Mark Fell</a>, <a target='_blank' href='http://riantreanor.com/'>Rian Treanor</a> and <a target='_blank' href='https://qubik.com/'>Joe Gilmore</a>. It uses a shared interface for manipulating pattern generation and sound synthesis. This enables groups of people to play together in real time. 

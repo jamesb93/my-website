@@ -16,6 +16,10 @@
     The code for this project was mostly made in an ad-hoc fashion and is largely untraceable. Nonetheless it is available <a href="https://github.com/jamesb93/Stitch-Strata">here</a> for the brave.
 </p>
 
+<p>
+    If you're interested in learning more about the code and sounds I wrote it about it in my thesis: <a target='_blank' href='https://harnessing.xyz/projects/stitch-strata'>https://harnessing.xyz/projects/stitch-strata</a>
+</p>
+
 <style>
     audio {
         margin-top: 20px;

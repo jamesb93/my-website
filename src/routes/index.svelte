@@ -11,6 +11,11 @@
 	<p>
 		I am a composer and creative-coder from Perth, Western Australia. I currently reside in Northern England. I enjoy programming in my practice and harnessing the computer to find and organise audio-samples through machine listening and learning. I finished my PhD @ University of Huddersfield in 2021 under the supervision of <a target="_blank" href="http://www.alexanderjharker.co.uk">Alex Harker</a> and <a target="_blank" href="https://pure.hud.ac.uk/en/persons/steven-jan">Steven Jan</a>. You can read my thesis at <a target='_blank' href='https://harnessing.xyz'>https://harnessing.xyz</a>.
 	</p>
+
+	<p>
+		I currently work as a Research Fellow in Creative Coding on the <a href="https://www.flucoma.org/">Fluid Corpus Manipulation</a> project.
+	</p>
+	
 	<p>
 		You can see what I am up to by looking at my <a href='/code'>code</a> or projects in the sidebar. If you want to get into contact with me about sound or code send an e-mail to <a href="mailto:hello@jamesbradbury.xyz" id="contact">hello@jamesbradbury.xyz.</a>
 	</p>
