@@ -117,16 +117,18 @@ import Hamburger from '$lib/Hamburger.svelte';
 
 	.projects {
 		gap: 6px;
-		text-align: left;
 	}
 
 	.sidebar-link {
+		color: black;
 		max-width: max-content;
 		text-decoration: none;
 	}
 
-	.project { 
-		margin-left: 0.5em;
+	.sidebar-link:hover {
+		background-color: white;
+		color: black;
+		text-decoration: underline dotted grey;
 	}
 
 	.sel {
@@ -136,7 +138,7 @@ import Hamburger from '$lib/Hamburger.svelte';
 	/* Media Queries */
 	@media (min-width: 1200px) {
         .container {
-			grid-template-columns: auto min(65ch, 100%) auto;
+			grid-template-columns: auto min(70ch, 100%) auto;
             grid-template-areas:
             "navigation main empty-right"
         }
@@ -182,6 +184,5 @@ import Hamburger from '$lib/Hamburger.svelte';
 
 	#project-divider {
 		font-weight: bold;
-		text-decoration: underline;
 	}
 </style>
