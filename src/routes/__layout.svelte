@@ -3,8 +3,7 @@
 	import { page } from '$app/stores';
 	import { slide } from 'svelte/transition';
 	import { onMount } from 'svelte';
-	import Hambruger from '$lib/Hamburger.svelte';
-import Hamburger from '$lib/Hamburger.svelte';
+	import Hamburger from '$lib/Hamburger.svelte';
 	const breakpoint = 1200;
 	let w;
 	let expand = false;
@@ -40,12 +39,11 @@ import Hamburger from '$lib/Hamburger.svelte';
 		</div>
 
 		{#if w < breakpoint}
-		<!-- <div id='expansion-btn' on:click={ ()=> expand=!expand }>show nav</div> -->
 		<Hamburger expanded={expand} on:click={ ()=> expand=!expand }/>
 		{/if}
 
 		{#if (w < breakpoint && expand === true) || w >= breakpoint}
-		<div class=nav-list transition:slide>
+		<div class=nav-list>
 			{#each sidebarLinks as pg}
 			<a 
 			class='sidebar-link' 
@@ -58,11 +56,11 @@ import Hamburger from '$lib/Hamburger.svelte';
 		</div>
 
 		<!-- PROJECT DIVIDER -->
-		<div id='project-divider' transition:slide>
+		<div id='project-divider'>
 			Projects
 		</div>
 
-		<div class='nav-list projects' transition:slide>
+		<div class='nav-list projects'>
 			{#each projects as pj}
 			<a 
 			class='sidebar-link project' 
