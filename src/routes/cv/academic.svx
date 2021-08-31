@@ -11,7 +11,7 @@
         <p>51 Yew Tree Road, Shepley</p>
         <p>West Yorkshire, Huddersfield, HD88DT</p>
         <p>+44 7494795572</p>
-        <p><a href="mailto:james.bradbury@hud.ac.uk">james.bradbury@hud.ac.uk</a></p>
+        <p><a href="mailto:jb@jamesbradbury.xyz">jb@jamesbradbury.xyz</a></p>
         <p><a href="https://www.jamesbradbury.xyz">jamesbradbury.xyz</a></p>
     </div>
 </div>
@@ -19,6 +19,8 @@
 ## Employment
 
 ### Current Employment
+
+**Research Fellow in Creative Coding on Fluid Corpuus Manipulation** - *University of Huddersfield*
 
 **Sessional Lecturer, Seminar Leader and Tutor** - *University of Huddersfield*
 
@@ -52,7 +54,7 @@ I have been contracted as a programmer and creative coder to work with several d
 
 <div slot="right">
 
-**PhD Music (Submission planned June/July 2021)** , *The University of Huddersfield*
+**PhD Music**, *The University of Huddersfield*, Awarded July 2021.
 </div>
 </Item>
 
@@ -63,7 +65,7 @@ Thesis
 </div>
 <div slot="right">
 
-Harnessing content-aware programs for studio-based digital computer-aided composition. *(In Progress)*
+Harnessing content-aware programs for studio-based digital computer-aided composition.
 </div>
 </Item>
 

@@ -1,0 +1,98 @@
+<script>
+    import NextSection from '$lib/components/NextSection.svelte';
+</script>
+
+# Submitted Materials
+
+## Pieces
+All pieces are presented in stereo audio format.
+
+### Stitch/Strata
+
+*Format:* Fixed Media Piece
+
+*Duration:* 7:23
+
+*Path (Audio Only):* /Projects/StitchStrata/
+
+### Annealing Strategies
+
+*Format:* Fixed Media Piece
+
+*Duration:* 3:33
+
+*Path (Audio Only):* /Projects/Annealing Strategies/
+
+### Refracted Touch
+
+*Format:* Live Electronics and Lap Steel Guitar
+
+*Duration:* 9:56
+
+*Path:* /Projects/Refracted Touch/
+
+*Audio:* /Projects/Refracted Touch/Audio/
+
+*Code:* /Projects/Refracted Touch/Code/
+
+### Reconstruction Error
+
+*Format:* 5 Fixed Media Pieces in an EP 
+
+*Duration:* 24:38
+
+*Path:* /Projects/Reconstruction Error/
+
+*Audio:* /Projects/Reconstruction Error/Audio/
+
+*Supporting Code:* /Projects/Reconstruction Error/Supporting Code/
+
+
+### Interferences
+
+*Format:* 2 Fixed Media Pieces in an EP 
+
+*Duration:* 23:14
+
+*Path:* /Projects/Interferences/
+
+*Audio:* /Projects/Interferences/Audio/
+
+*Supporting Code:* /Projects/Interferences/Supporting Code/
+
+## Software
+
+### mosh
+
+*Path*: /Software/mosh/
+
+*GitHub*: https://www.github.com/jamesb93/mosh
+
+### Finding Things In Stuff (FTIS)
+
+*Path*: /Software/FTIS/
+
+*GitHub*: https://www.github.com/jamesb93/ftis
+
+### ReaCoMa
+
+*Path*: /Software/ReaCoMa/
+
+*GitHub*: https://www.github.com/jamesb93/reacoma
+
+<NextSection 
+next='v. List Of Interactive Elements'
+link='/list-of-interactive-elements'
+/>
+
+<style>
+h2 {
+    margin-top: 0.5em;
+}
+h3 {
+    margin-top: 0.5em;
+}
+p {
+    margin: 0;
+}
+</style>

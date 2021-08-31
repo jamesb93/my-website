@@ -1,0 +1,406 @@
+<script>
+    import ImageMedia from '$lib/components/ImageMedia.svelte'
+    import NextSection from "$lib/components/NextSection.svelte"
+    import YouTube from "$lib/components/YouTube.svelte"
+    import {metadata as m} from "../directory.svx"
+    import Points from '$lib/demos/dimension-reduction/Points.svelte';
+    import Code2 from '$lib/components/Code2.svelte';
+</script>
+
+# Finding Things in Stuff
+
+The FTIS source code can be found here: [/Software/Finding Things In Stuff (FTIS)](https://www.github.com/jamesb93/ftis).
+
+FTIS is a computer-aided composition framework that facilitates audio descriptor analysis and composition with corpora of digital samples. FTIS is designed to aid sample selection from within a corpus, clustering of samples into perceptually similar groups, and filtering of corpora by audio descriptor analysis. It also provides *adapters* — bits of code which allow the outputs of these analytical processes to be rapidly transported into compositional or creative coding environments. My interest in performing such tasks came from experimenting with them in [Reconstruction Error]({m.re}). However, I felt that much of the code I had written for that project was not reusable or extensible. I wanted to carry forward the compositional strategies from this work into future projects in a way where code would not have to be significantly rewritten or transformed to fit my creative needs. As such, FTIS was used throughout [{m.emname}]({m.em}).
+
+Below are some of the key aims I formulated when I decided to create [FTIS]({m.ftis}).
+
+1. *FTIS should be able to compose arbitrary chains or tree structures of processes* where multiple stages of analysis can share their data. 
+
+2. *FTIS should automatically create traces of interaction and use*. Every time it is run or used it should automatically produce a record of the sound materials that were processed, the version of the software, the time and date, an error log, and what parameters were used. Most of the Python code that I wrote for [Reconstruction Error]({m.re}) was not adequately documented because I did not foresee that it would even remain relevant to the creative project in its earliest stages. Automatically producing documentation would have been helpful for informing critical reflection, keeping a record of successful and unsuccessful working patterns or settings, and for ensuring even nascent experiments would produce a trace that could be referred to during and after the compositional process.
+
+3. *FTIS should operate rapidly as a part of the compositional process*. While the code made in [Reconstruction Error]({m.re}) served my creative purposes for that particular project, alternating between code, auditioning sound files, and using Max and REAPER was sometimes slow and diminished my ability to rapidly test different analytical processes and ideas. This friction was largely due to the fact the interface did not abstract away "housekeeping" code and required a lot of that type of work to be duplicated each time I wanted to test something. To meet these concerns, I envisaged FTIS presenting a minimalist control interface such as the command line, and containing methods for rapidly auditioning sounds, for organising them into pre-compositional structures such as a REAPER session, and for inspecting the data produced from analysis. Re-analysis should also be cached to increase the rate at which analysis chains can be reconfigured and experimented with.
+
+## Implementation
+FTIS is implemented as a Python package. This means that it can be installed by Python's package manager `pip` and accessed by importing it in a Python script. While this increases the barrier for entry and requires the user to know Python, it simplifies many architectural decisions by keeping everything within one language. One idea I pursued briefly and early on was creating a domain-specific language (DSL) based on the [YAML syntax](https://yaml.org/) which would then be parsed by FTIS. After building a prototype of this interface, I found it was not sufficiently expressive and was slow to iterate on. When I wanted to make a change to the DSL, it often required also modifying the underlying framework code that allowed the DSL to structure and execute Python code. Confining FTIS to pure Python also meant that any of the code written in FTIS is interoperable with other Python code. This makes it flexible for combining it with existing code as well as with additional libraries and modules.
+
+FTIS is imported as a module into a Python script and exposes classes that perform specific functions related to analysis as well as file and data management. A didactic example is given in [CODE 5.2.1]({m.ftis}#code1) of a Python script which uses FTIS to perform automatic segmentation on a corpus of audio files. Each line is annotated with a comment for clarity on its purpose and function. More specific information is given in [[5.2.3 Architecture]]({m.ftis}#architecture).
+
+<Code2
+id='code1'
+caption='Didactic FTIS example for segmenting a corpus'
+figure='CODE 5.2.1'
+>
+
+```python
+from ftis.world import World # Import the World class
+from ftis.analysers.flucoma import Noveltyslice # Import the Noveltyslice class
+
+world = World(sink="/path/to/output")
+"""
+Create an instance of the World() class in the variable world
+Set the sink variable to an output location on the disk either existing or new
+Everything attached to this instance of a World() will then output to this location
+"""
+
+corpus = Corpus("/path/to/corpus")
+"""
+Create an instance of a Corpus() class
+This is pointed to a directory containing audio files, or a single audio file
+"""
+
+corpus >> Noveltyslice()
+"""
+Using the >> operator, analysers can be connected together in chains
+This dictates that the audio files in the corpus should be passed to the Noveltyslice(r) 
+"""
+
+world.build(corpus)
+"""
+The build() method of the World() class is then called
+It takes any number of Corpus() objects as an argument
+This stage connects together the inputs and outputs of the analysers
+"""
+world.run() # The run() method is then called which starts processing
+```
+
+</Code2>
+
+This script would then be executed by running it as a normal Python script. For example, if the file was named `segmentation.py`, the user would then invoke `python segmentation.py`. The script would then create an output directory at the sink (if it does not exist), log the [metadata]({m.ftis}#world), and then segment all audio files located in `/path/to/corpus/`. The resulting output of this would be a `.json` file containing the slice points for each file.
+
+## The Role of FTIS in My Practice
+The primary role of [FTIS]({m.ftis}) is to facilitate a dialogue between me and the computer embedded in the process of searching and browsing through sound corpora. By drawing in and streamlining the interoperability of different analysis and data-processing libraries a unified creative-coding interface is created that supports the expressive curating, filtering, searching and sorting of sounds. This allows me to formulate in the abstract theories related to selecting material and their relationships, and to encode these as a *query* in [FTIS]({m.ftis}). From the results that are produced, my questions are developed and honed, or new ones are generated.
+
+Different forms of *querying* exist in my practice and are supported by combinations and pipelines of analysis and data-processing. This diversity is bound to a single cohesive motivation — to develop an understanding of the relationship between individual sounds, between groups of sounds, or even the two combined. There are four key conceptual themes and motivations that catalysed and influenced [FTIS]({m.ftis}): "Discovering Structure In A Corpus", "Finding Groups Of Perceptually Homogenous Samples", "Discovering Unknown Items That Are Novel" and "Capitalising On Knowns". These were seeded by the work undertaken in [Reconstruction Error]({m.re}), which was carried forward into [Interferences]({m.em}).
+
+### Discovering Structure in a Corpus
+The notion of a corpus having "structure", refers to the idea that sound materials are inherently related, and analysis can aid in uncovering the existence of underlying perceptual links between sounds. This is supported by dimension-reduction algorithms, and interacting with the technological aspect is a dialogue between the theoretical basis and my intuitions. As such, structure might be inferred from visualising projections of data, or directly using the output to drive audition. Configuring and modifying such processes to change the representation, and thus the presentation of relationships in the data, can also be a fruitful way of gathering an overview of a corpus and formulating notions related to structure.
+
+Such an approach was instrumental in the early phases of composing [Reconstruction Error]({m.re}). A visual representation of the corpus was created by analysing the samples with audio descriptors and reducing that data to two dimensions using the UMAP algorithm. The topology of the visual representation led to a subsequent application of clustering, in response to my impression that the computer had partitioned samples spatially into their own distinct *neighbourhoods*. [DEMO 5.2.1]({m.ftis}#demo1) reflects these characteristics of the data, and shows how samples with similar numerical features (represented by their colour) are projected differently into the latent space depending on the parameters of the UMAP algorithm. Shifting between parameter combinations illustrates how the computer is able to represent the connections between perceptually similar sounds in a number of different ways.
+
+<Points 
+title='The effect of UMAP parameters on the projection characteristics'
+caption='DEMO 5.2.1'
+id='demo1'
+/>
+
+### Finding Groups of Perceptually Homogenous Samples
+Grouping samples into perceptually homogenous clusters is important to me from an aesthetic point of view. I often work with sounds which are noise-based and gathered by inherently non-musical means, and therefore structuring those sounds into collections based on perceptual homogeneity allows me to discover the musicality in them. I find it appealing to be able to discern the potential for musical structure in what might be considered non-musical material.
+
+From this grouping process, I can create texturally focused compositional structures that engender a sense of cohesion between such materials, based on their shared morphological and timbral characteristics, while still retaining their subtler differences. As an example, [_.dotmaxwave]({m.re}#_dotmaxwave) and [--isn]({m.re}#isn) from [Reconstruction Error]({m.re}) grew almost entirely out of my engagement with a corpus of materials partitioned into perceptually similar groups via clustering. I did not plan to discover the specific material I did for these pieces; rather, their compositional usefulness arose from my engagement with them as collections of perceptually connected materials.
+
+### Discovering Unknown Items That Are Novel
+In contrast to finding groups of samples that demonstrate homogeneity, I find that compositional thought can be sparked by discovering corpus items that are extraordinary or novel, given a data-driven metric such as an audio descriptor. To an extent this is a form of *serendipity* which I want to emerge from the dialogue between me and the computer.
+
+In [Reconstruction Error]({m.re}), [sys.ji_]({m.re}#sysji_) grew from the idea of using samples from the databending corpus — sounds derived by converting raw data into audio files — that were in opposition to the light, fragile and impulse-based material I had used to compose the other pieces in that EP. Inspecting clustering data, I happened upon a cluster of "rejects" (samples which the program could not confidently group) which contained this antagonistic material I wanted to find. There was a small element of planning in this strategy, although encountering that material was largely a confluence of trial and error and an outcome of the inherent characteristics of the HDBSCAN algorithm. 
+
+### "Capitalising" on Knowns
+Given enough time spent with a certain collection of sounds, I will at some point in the creative process develop an affinity or appreciation for a specific sample or sample type in a corpus. This can emerge through audition or some other form of computer-led corpus exploration. "Capitalising" on knowns, refers to processes that allow me to use prior knowledge to search for additional sounds, or to structure further queries around those knowns through comparison.
+
+The gathering of compositional materials in [P 08_19]({m.em}#p-08_19) was influenced by my continued listening to a set of *static* materials. Within these materials I identified three different "anchors" — sounds which I found were novel amongst a collection — which I then used as key points in the corpus from which to derive and search for other sounds. This was technically managed with a k-d tree, leveraging it to *branch* out from the location of these samples in a latent space constructed through audio descriptors. From this process I was able to find materials that were perceptually similar to each specific anchor, and thus built the piece from that.
+
+Similarly, in [G090G10564620B7Q]({m.em}#G090G10564620B7Q) I proliferated stationary and morphologically invariant material through the superimposition of similar sounds. This allowed me to find ways of compositionally developing the piece using a single sample as a starting point. This was facilitated again by the k-d tree to search for sounds which were similar to this specific static sample.
+
+## Architecture
+This section explains the architecture of FTIS and the relationship between its two key components, *analysers* and *worlds*.
+
+### Analysers
+One of the primary elements of FTIS are sub-modules named analysers. An analyser is a Python class that inherits the parent class `FTISAnalyser`. This optimises the development of new analysers because much of the boilerplate code exists in the superclass rather than in the analyser itself. It also means that the underlying features of all analysers can be improved without having to modify each one individually. [CODE 5.2.2]({m.ftis}#code2) contains the Uniform Manifold Approximation and Projection (UMAP) dimension-reduction analyser as a reference for how an analyser can be implemented. This analyser accepts a matrix of arbitrarily sized data and transforms it into a new matrix according to the [UMAP algorithm](https://arxiv.org/abs/1802.03426)
+
+<Code2
+id='code2'
+figure='CODE 5.2.2'
+caption='UMAP Analyser'
+>
+
+```python
+class UMAP(FTISAnalyser):
+    """Dimension reduction with UMAP algorithm"""
+
+    def __init__(self, mindist=0.01, neighbours=7, components=2, cache=False):
+        super().__init__(cache=cache)
+        """
+        Keyword argument parameters are assigned to members of the class
+        """
+        self.mindist = mindist
+        self.neighbours = neighbours
+        self.components = components
+        self.output = {}
+
+    def load_cache(self):
+        """
+        This dictates what should happen if we are asked to load a cache from disk
+        Mostly this is the same between analysers but it can change
+        """
+        self.output = read_json(self.dump_path)
+
+    def dump(self):
+        """
+        This function is called when the analyser writes analysis data to disk
+        """
+        jdump(self.model, self.model_dump)
+        write_json(self.dump_path, self.output)
+
+    def analyse(self):
+        """
+        This is called from the run() function below
+        This function is what calls the UMAP module to process the matrix of data
+        """
+        data = np.array([v for v in self.input.values()])
+
+        self.model = umapdr(
+            n_components=self.components, 
+            n_neighbors=self.neighbours, 
+            min_dist=self.mindist, 
+            random_state=42
+        )
+        self.model.fit(data)
+        transformed_data = self.model.transform(data)
+        self.output = {
+            k: v.tolist() 
+            for k, v in zip(
+                self.input.keys(), 
+                transformed_data
+            )
+        }
+
+    def run(self):
+        """
+        run() wraps the analyser function
+        This is a generic function to orchestrate processing at the right time...
+        ... and gives flexibility to what happens when it 'runs'
+        """
+        staticproc(self.name, self.analyse)
+```
+
+</Code2>
+
+
+The `UMAP` class definition only deals with class methods that are responsible for data processing, [caching]({m.ftis}#caching) and defining parameters. The superclass is more complex and contains code that deals with behaviour that is not directly related to data processing. The `FTISAnalyser` class can be read in the source code: [FTISAnalyser definition](https://github.com/jamesb93/ftis/blob/3fdef209d3259783cbc4c4d296dd99f94cab727f/ftis/ftis/common/analyser.py).
+
+### World
+A FTIS `World()` connects several `analysers` together so they can communicate important bits of information to each other, such as their relationship in a hierarchical chain and their input and output data. A `World()` is made by creating an instance of the class and specifying where the output (or *sink*) should be. The *sink* is a location on disk where analysis and outputs are stored. [CODE3]({m.ftis}#code3) demonstrates how a world is created and how a *sink* is defined.
+
+<Code2
+id='code3'
+figure='CODE 5.2.3'
+caption="Creating a FTIS World() and defining the sink"
+>
+
+```python
+world = World(sink="/Users/james/my-output")
+```
+
+</Code2>
+
+Once analysers have been connected together with the `>>` operator, the first node in the chain of connected analysers is passed as an argument to the `build()` method of the world. Calling this function prompts the analyser passed to `build()` to recurse through the chain of connected analysers so that a linked list type structure can be formed. This is essential so that analysers are executed in the right order and the correct output data is passed to the input of the next connected analyser. [CODE 5.2.4]({m.ftis}#code4) illustrates this in an annotated example.
+
+<Code2
+id='code4'
+figure='CODE 5.2.4'
+caption='Connecting analysers together with >> operator and building the chain'
+>
+
+```python
+src = Corpus("~/my-audio-files")
+src >> FluidNoveltySlice(threshold=0.35, feature=1) # Connect together processes using >>
+world.build(src) # Now add the Corpus 'src' node to our world
+```
+
+</Code2>
+
+Once the `build()` method is called the connections between analysers is finalised and the series of analysers can start processing. This is executed by calling the `run()` method, demonstrated in [CODE 5.2.5]({m.ftis}#code5)
+
+<Code2
+id='code5'
+figure='CODE 5.2.5'
+caption='Calling the run() method of the World() instance'
+>
+
+```python
+world.run() # Finally run the chain of connected analysers
+```
+
+</Code2>
+
+When the `World()` is built it automatically produces metadata. This metadata is recorded in a `metadata.json` file inside the *sink* directory which documents the connection between analysers, their parameters and the time of execution. An example `metadata.json` file is given in [CODE 5.2.6]({m.ftis}#code6).
+
+<Code2
+id='code6'
+figure='CODE 5.2.6'
+caption='An example of automatically produced metadata'
+>
+
+```json
+{
+    "analyser": {
+        "0_FluidMFCC": {
+            "name": "FluidMFCC",
+            "order": 0,
+            "input_order_hash": "",
+            "fftsettings": [
+                1024,
+                -1,
+                -1
+            ],
+            "numbands": 40,
+            "numcoeffs": 20,
+            "minfreq": 80,
+            "maxfreq": 20000,
+            "discard": true,
+            "identity_hash": "b0bd629d34e36339cd082c1b478ecfff5ee70d7a"
+        },
+        "1_Stats": {
+            "name": "Stats",
+            "order": 1,
+            "input_order_hash": "",
+            "numderivs": 1,
+            "flatten": true,
+            "spec": [
+                "mean",
+                "stddev",
+                "skewness",
+                "kurtosis",
+                "min",
+                "median",
+                "max"
+            ],
+            "identity_hash": "a42f7d72edf350bd67b1090902b6b09998bf0327"
+        },
+        "2_Standardise": {
+            "name": "Standardise",
+            "order": 2,
+            "input_order_hash": "",
+            "identity_hash": "893b437bb08018eb126db85214a18b7c17e45939"
+        },
+        "3_HDBSCluster": {
+            "name": "HDBSCluster",
+            "order": 3,
+            "input_order_hash": "",
+            "minclustersize": 10,
+            "minsamples": 1,
+            "identity_hash": "a2526ee93426590855b253fee9057e6f852474ec"
+        }
+    },
+    "success": {
+        "0_FluidMFCC": true,
+        "1_Stats": true,
+        "2_Standardise": true,
+        "3_HDBSCluster": true
+    },
+    "time": "20:01:11 | August 20, 2020",
+    "io": "['FluidMFCC', 'Stats', 'Standardise', 'HDBSCluster']"
+}
+```
+
+</Code2>
+
+
+This metadata is an important feature in my practice, because it enables me to trace compositional decision making and choices in projects as well as *between* projects. For example, while reflecting on [Stitch/Strata]({m.ss}) some time after its composition, it was difficult to connect how some musical outcomes were achieved merely by looking at the code. There is no record of what sounds or data the code actually produced. Throughout the creative process of that piece, I created several different scripts that asked for input when they were run, but they did not make a record of what those parameters and commands were. Automatically producing a record manages this aspect for me, and allows me to focus entirely on compositional concerns.
+
+### Caching
+One of the most creatively inhibiting experiences for me is waiting for re-analysis to complete between consecutive executions of a script that has been changed in a minor way. This was a common occurrence when I used earlier versions of FTIS and especially in phases of compositional experimentation. The pseudocode example in [CODE 5.2.7]({m.ftis}#code7) describes a chain of FTIS analysers that calculate the median spectral centroid value for each sample in a corpus. This is performed by first computing a frame-by-frame spectral analysis and then summarising the resulting data.
+
+<Code2
+id='code7'
+figure='CODE 5.2.7'
+caption='Pseudocode example connecting three analysers together'
+>
+
+```py
+Corpus() >> SpectralCentroid() >> Median()
+```
+
+</Code2>
+
+
+If after running this first script I decide that the average might be a more suitable statistic to use instead of the median, the script could be modified to pass instead the data from `SpectralCentroid()` to the `Average()` analyser. This is shown in [CODE 5.2.8]({m.ftis}#code8).
+
+<Code2
+id='code8'
+figure='CODE 5.2.8'
+caption='Pseudocode example where the Median() is replaced by the Average() analyser'
+>
+
+```py
+Corpus() >> SpectralCentroid() >> Average()
+```
+
+</Code2>
+
+For both examples, the output of `SpectralCentroid()` will be exactly the same, because the parent analysers and that analyser are unchanged. Significant time can be saved here by storing the analysis produced from `SpectralCentroid()` calculated on the first execution and retrieving it on the second execution. FTIS is designed so that it can identify these types of changes, respecting both the order and nature of the analysers of the chain, as well as the parameter configuration for each. This is performed by generating a unique hash from the input data and the parameters of each analyser. [CODE 5.2.9]({m.ftis}#code9) shows the hash-creation function.
+
+<Code2 
+id='code9'
+figure='CODE 5.2.9'
+caption='Hash creation function in FTIS'
+>
+
+```python
+def create_hash(*items) -> str: # Accept an arbitrary amount of items
+    """Create a hash from a list of items"""
+    m = hashlib.blake2b(digest_size=20) # Create a hash using the BLAKE algorithm
+    for item in items:
+        m.update(str(item).encode("utf-8"))
+    return m.hexdigest() # Return a string that is the new hash
+```
+
+</Code2>
+
+Using this function, a 20-character hash can be created from any number of inputs passed as `items` to the function. An internal method, `create_identity()`, defined in `FTISAnalyser` creates the hash from passing its own parameters, the input data and its parent analyser's hash to `create_hash()`. This ensures that the analyser itself and all the preceding analysers and their parameters are included in the creation of a unique identifier at each stage. [CODE 5.2.10]({m.ftis}#code10) shows the `create_identity()` function.
+
+<Code2
+id='code10'
+figure='CODE 5.2.10'
+caption='The create_identity() function'
+>
+
+```python
+def create_identity(self) -> None:
+p = {
+    k: str(v) 
+    for k, v in vars(self).items() 
+    if k not in ignored_keys
+}
+self.parent_parameters = {}
+self.traverse_parent_parameters()
+self.identity["hash"] = create_hash(self.parent_parameters, p)
+```
+
+</Code2>
+
+When an analyser successfully completes its analysis, it records the hash inside the `metadata.json` file, which is created in the location of the `World()` *sink* to which the analyser is bound. Before any analysis is performed, the analyser will check to see if a `metadata.json` exists, and if it contains a matching hash. If both of these constraints are satisfied, it will look for stored analysis data and use those.
+
+By implementing caching, the overall usability is improved by tightening the feedback loop between scripting and other aspects of my compositional process. Prior to implementing this feature, I would avoid certain types of analysis or creating long chains of analysers, for fear of having to wait for reanalysis to complete if I changed their parameters or modified the chain between uses. Thus, caching created new affordances by allowing me to construct more complex analysis chains, and the ability to trial and error new ideas faster while maintaining and a sense of fluidity when using the software. Thus, caching created new affordances through both the potential to construct more complex analysis chains, as well as the ability to trial and error new ideas faster, without sacrificing a sense of fluidity when using the software.
+
+<NextSection 
+next="5.3 ReaCoMa"
+link={m.reacoma}
+/>
+
+<style>
+	h1 {counter-reset: h2}
+    h2 {counter-reset: h3}
+    h3 {counter-reset: h4}
+    h4 {counter-reset: h5}
+
+    h1:before {content: "5.2." " "}
+
+    h2:before {
+        content: "5.2." counter(h2, decimal) " ";
+        counter-increment: h2;
+    }
+    h3:before {
+        content: "5.2." counter(h2, decimal) "." counter(h3, decimal) " ";
+        counter-increment: h3;
+    }
+    h4:before {
+        content: "5.2." counter(h2, decimal) "." counter(h3, decimal) "." counter(h4, decimal) " ";
+        counter-increment: h4;
+    }
+
+    h2.nocount:before, h3.nocount:before, h4.nocount:before {
+        content : "";
+        counter-increment: none;
+    }
+</style>

@@ -1,0 +1,110 @@
+<script>
+    import marked from 'marked';
+    import links from '../../static/links.json';
+    import refs from '../../static/references.json'
+    import discog from '../../static/discog.json'
+    import {metadata as m} from "./directory.svx"
+
+    // Sort the links by name
+    const reA = /[^a-zA-Z_]/g;
+    const reN = /[^0-9]/g;
+
+    function alphaSort(a,b) {
+        var al = a.name.toLowerCase();
+        var bl = b.name.toLowerCase();
+        var aA = al.replace(reA, "");
+        var bA = bl.replace(reA, "");
+
+        if (aA === bA) {
+            var aN = parseInt(a.name.replace(reN, ""), 10);
+            var bN = parseInt(b.name.replace(reN, ""), 10);
+            return aN === bN ? 0 : aN > bN ? 1 : -1;
+        } else {
+            return aA > bA ? 1 : -1;
+        }
+    };
+    
+    let sortedLinks = null;
+    let sortedVids = null;
+    let sortedRefs = null;
+    let sortedDiscog = null;
+    sortedLinks = links.links.sort(alphaSort);
+    sortedVids  = links.videos.sort(alphaSort);
+    sortedRefs  = refs.references.sort(alphaSort);
+    sortedDiscog = discog.discog.sort(alphaSort);
+</script>
+
+# References
+
+{#each sortedRefs as ref}
+    <div class="ref-container">
+        <a class="ref-link" target="_blank" href={ref.url}>{@html marked(ref.name)}</a>
+    </div>
+{/each}
+
+# Links
+<!-- There MUST be a space here -->
+{#each sortedLinks as link}
+    <div class="link-container">
+        <div class='title'>{link.name}</div>
+        <a target="_blank" href={link.url}>{link.url}</a>
+    </div>
+{/each}
+
+# Videos
+<!-- There MUST be a space here -->
+{#each sortedVids as vid}
+    <div class="link-container">
+        <div class='title'>{vid.name}</div>
+        <a target="_blank" href="{vid.url}">{vid.url}</a>
+    </div>
+{/each}
+
+
+# Discography and Works
+<!-- THERE MUST BE A SPACE HERE -->
+{#each sortedDiscog as d}
+    <div class="link-container">
+        <div class='title'>{d.name}</div>
+        <div class='artist'>{d.artist}</div>
+        <div class='year'>{d.year}</div>
+    </div>
+{/each}
+
+<style>
+.link {
+    font-weight: bold;
+    color: black;
+    width: 50%;
+}
+
+.link:hover {
+    color: white;
+}
+.link-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 14px;
+    text-align: left;
+    width: 100%;
+}
+
+.link-container > a {
+    max-width: max-content;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.link-container > .title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.ref-container {
+    text-align: left
+}
+
+.ref-link {
+    color:rgb(51, 51, 51);
+}
+</style>

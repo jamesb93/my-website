@@ -4,7 +4,6 @@
 	import { slide } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import Hambruger from '$lib/Hamburger.svelte';
-import Hamburger from '$lib/Hamburger.svelte';
 	const breakpoint = 1200;
 	let w;
 	let expand = false;

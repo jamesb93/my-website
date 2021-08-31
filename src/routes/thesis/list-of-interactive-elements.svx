@@ -1,0 +1,73 @@
+<script>
+    import NextSection from '$lib/components/NextSection.svelte';
+    import figures from '../../static/list-of-interactive-elements.json'
+</script>
+
+# List of Interactive Elements
+
+This list contains a reference to the interactive elements of this thesis. It does *not* include elements that link to external content such as YouTube or Vimeo. Instead, this information is provided in the [[References]](/references) amongst a list of hyperlinks, videos as well as a discography of works which have been mentioned.
+
+---
+
+## List of Audio Elements
+{#each figures['audio'] as [figure, title, url]}
+<div class='container'>
+    <a class='figure' href={url}>{figure}</a>
+    <div class='title'>{title}</div>
+</div>
+{/each}
+
+## List of Code Elements
+{#each figures['code'] as [figure, title, url]}
+<div class='container'>
+    <a class='figure' href={url}>{figure}</a>
+    <div class='title'>{title}</div>
+</div>
+{/each}
+
+## List of Demo Elements
+{#each figures['demo'] as [figure, title, url]}
+<div class='container'>
+    <a class='figure' href={url}>{figure}</a>
+    <div class='title'>{title}</div>
+</div>
+{/each}
+
+## List of Image Elements
+{#each figures['image'] as [figure, title, url]}
+<div class='container'>
+    <a class='figure' href={url}>{figure}</a>
+    <div class='title'>{title}</div>
+</div>
+{/each}
+
+## List of Video Elements
+{#each figures['video'] as [figure, title, url]}
+<div class='container'>
+    <a class='figure' href={url}>{figure}</a>
+    <div class='title'>{title}</div>
+</div>
+{/each}
+
+<NextSection 
+next="1. Introduction"
+link=/introduction
+/>
+
+<style>
+    .figure {
+        font-weight: bold;
+        max-width: max-content;
+    }
+
+    .title {
+        font-style: italic;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: left;
+    }
+</style>
