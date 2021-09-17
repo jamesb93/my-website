@@ -17,7 +17,7 @@
 	</p>
 
 	<p>
-		You can see what I am up to by looking at my <a href='/code'>code</a> or projects in the sidebar. If you want to get into contact with me about sound or code send an e-mail to <a href="mailto:hello@jamesbradbury.xyz" id="contact">hello@jamesbradbury.xyz.</a>
+		You can see what I am up to by looking at my <a href='/code'>code</a> or projects in the sidebar. If you want to get into contact with me about sound or code send an e-mail to <a href="mailto:hello@jamesbradbury.net" id="contact">hello@jamesbradbury.net.</a>
 	</p>
 </div>
 
