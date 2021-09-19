@@ -11,8 +11,8 @@
         <p>51 Yew Tree Road, Shepley</p>
         <p>West Yorkshire, Huddersfield, HD88DT</p>
         <p>+44 7494795572</p>
-        <p><a href="mailto:james.bradbury@hud.ac.uk">james.bradbury@hud.ac.uk</a></p>
-        <p><a href="https://www.jamesbradbury.xyz">jamesbradbury.xyz</a></p>
+        <p><a href="mailto:james.bradbury@hud.ac.uk">me@jamesbradbury.net</a></p>
+        <p><a href="https://www.jamesbradbury.net">jamesbradbury.net</a></p>
     </div>
 </div>
 
