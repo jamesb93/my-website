@@ -19,10 +19,32 @@
 ## Employment
 
 ### Current Employment
+**Research Fellow in Creative Coding** - *[Fluid Corpus Manipulation Project](https://www.flucoma.org)*
+
+**Knowledge Dissemenation**, *including*:
+- Building Max documentation
+- Designing workshops for machine listening and learning
+- Researching concepts from data science and machine learning can be taught to musicians at many levels of musical and programming proficiency
+- 1-to-1 tuition in achieving aesthetic and musical goals with FluCoMa tools
+- Generating web-based materials to support the transfer to techno-fluent musicians
+
+**Programming**, *including*:
+- Building FluCoMa tools from C++ code in multiple creative coding environments
+- Max, SuperCollider programming more generally and with FluCoMa tools
+- Interface design and user experience
+- `cmake` and `ninja` toolchains
+
+### Freelance
+
+**Freelance Programming and Creative Coding**
+
+I have been contracted as a programmer and creative coder to work with several different technologies. These include C++, Python, Max and web-based programming using JavaScript and a number of frameworks. Jobs have included developing custom documentation generation for C++ libraries, creating Max "packages" and creating bespoke systems for creative projects. I also have taken the role of a private tutor, teaching Max, machine listening/learning and embedded programming to independent artists who want to expand their skill sets.
+
+### Past Employment
 
 **Sessional Lecturer, Seminar Leader and Tutor** - *University of Huddersfield*
 
-**Teaching responsibilities**, *including*:
+**Teaching Responsibilities**, *including*:
 - Designing lecture materials for electronic music modules at undergraduate level.
 - One-to-one tutoring for final year undergraduate students.
 - Leading seminars across desktop music production, sonic arts theory and practice.
@@ -33,12 +55,6 @@ My undergraduate teaching at Huddersfield began in 2017. While employed by the u
 **Administration and other responsibilities**, *including*: 
 - Personal tutor to 6 final year undergraduate students
 - Liaising with module leaders and line managers over student concerns
-
-### Programming
-
-**Freelance Programming and Creative Coding**
-
-I have been contracted as a programmer and creative coder to work with several different technologies. These include C++, Python, Max and web-based programming using JavaScript and a number of frameworks. Jobs have included developing custom documentation generation for C++ libraries, creating Max "packages" and creating bespoke systems for creative projects. I also have taken the role of a private tutor, teaching Max, machine listening/learning and embedded programming to independent artists who want to expand their skill sets.
 
 <div class='pb' />
 
@@ -52,7 +68,7 @@ I have been contracted as a programmer and creative coder to work with several d
 
 <div slot="right">
 
-**PhD Music (Submission planned June/July 2021)** , *The University of Huddersfield*
+**PhD Music** , *The University of Huddersfield*
 </div>
 </Item>
 
@@ -63,7 +79,7 @@ Thesis
 </div>
 <div slot="right">
 
-Harnessing content-aware programs for studio-based digital computer-aided composition. *(In Progress)*
+Harnessing content-aware programs for studio-based digital computer-aided composition. Awarded 2021.
 </div>
 </Item>
 
@@ -107,7 +123,7 @@ Supervisors
 </div>
 <div slot="right">
 
-Dr. Alex Harker & Dr. Steven Jan
+Dr. Chris Tonkin & Dr. Louise Devenish
 </div>
 </Item>
 
