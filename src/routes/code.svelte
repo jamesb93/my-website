@@ -10,7 +10,7 @@
 <p>ReaCoMa is set of bindings to <a href="https://www.flucoma.org">FluCoMa’s</a> ‘toolbox 1’ algorithms in REAPER. ReaCoMa brings several segmentation and decomposition algorithms which can be applied to creative deconstruction, manipulation and transformation all within your favourite DAW.</p>
 <p>Language(s): Lua</p>
 <p><a href="https://www.reacoma.xyz">https://www.reacoma.xyz</a></p>
-<p><a href="https://www.github.com/jamesb93/reacoma">https://www.github.com/jamesb93/reacoma</a></p>
+<p><a href="https://github.com/ReaCoMa/ReaCoMa-2.0/">https://github.com/ReaCoMa/ReaCoMa-2.0/</a></p>
 
 <h2 id="ftis">FTIS</h2>
 <p>FTIS is a Python-based framework for orchestrating complex machine listening and machine learning tasks for the purposes of computer-aided composition. It provides a interface that despite being simple and intuitive is flexible. It draws on the excellent work of other projects such as the <a href="https://www.flucoma.org">Fluid Corpus Manipulation project</a>, <a href="">scikit-learn</a> and the wonderful community at <a href="https://discourse.flucoma.org">https://discourse.flucoma.org.</a></p>
