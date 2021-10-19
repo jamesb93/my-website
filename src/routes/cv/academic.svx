@@ -16,16 +16,13 @@
     </div>
 </div>
 
-## Employment
-
-### Current Employment
-**Research Fellow in Creative Coding** - *[Fluid Corpus Manipulation Project](https://www.flucoma.org)*
+## Current Employment
+### Research Fellow in Creative Coding - *[Fluid Corpus Manipulation Project](https://www.flucoma.org)*
 
 **Knowledge Dissemenation**, *including*:
-- Building Max documentation
-- Designing workshops for machine listening and learning
-- Researching concepts from data science and machine learning can be taught to musicians at many levels of musical and programming proficiency
-- 1-to-1 tuition in achieving aesthetic and musical goals with FluCoMa tools
+- Researching how concepts across data science and machine learning can be taught to musicians with varying levels of musical and programming proficiency
+- Building Max documentation for the toolkit
+- Designing and delivering workshops for machine listening and learning with FluCoMa tools
 - Generating web-based materials to support the transfer to techno-fluent musicians
 
 **Programming**, *including*:
@@ -34,15 +31,13 @@
 - Interface design and user experience
 - `cmake` and `ninja` toolchains
 
-### Freelance
-
-**Freelance Programming and Creative Coding**
+### Freelance Programming and Creative Coding
 
 I have been contracted as a programmer and creative coder to work with several different technologies. These include C++, Python, Max and web-based programming using JavaScript and a number of frameworks. Jobs have included developing custom documentation generation for C++ libraries, creating Max "packages" and creating bespoke systems for creative projects. I also have taken the role of a private tutor, teaching Max, machine listening/learning and embedded programming to independent artists who want to expand their skill sets.
 
-### Past Employment
+## Past Employment
 
-**Sessional Lecturer, Seminar Leader and Tutor** - *University of Huddersfield*
+### Sessional Lecturer, Seminar Leader and Tutor - *University of Huddersfield*
 
 **Teaching Responsibilities**, *including*:
 - Designing lecture materials for electronic music modules at undergraduate level.
@@ -141,6 +136,18 @@ Dr. Chris Tonkin & Dr. Louise Devenish
 
 ## Research Experience
 <Item>
+    <div slot='left'>
+        Ongoing
+    </div>
+    <div slot='right'>
+
+        **Post-Doctoral Research with FluCoMa**
+
+        As a post-doctoral researcher with the FluCoMa project, I have been answering questions surrounding the pedagogy of machine listening and learning. To do this, I have been creating documentation, learning resources and designing new musicianly interfaces for objects in Max with the toolkit. Alongside this I have been providing workshops to various levels of techno-fluent musicians and using their experiences as feedback to drive the forward development of the tools and to drive my own musical practice.
+    </div>
+</Item>
+
+<Item>
 <div slot="left">
 
 Ongoing
@@ -149,7 +156,7 @@ Ongoing
 
 **Writing and Publishing Articles**
 
-I have experience writing and publishing articles and delivering presentations on my own research as both a Master's and PhD student (specific papers and presentations are listed in Publications and Presentations respectively).
+I have experience writing and publishing articles as well as delivering presentations on my own research as both a Master's and PhD student (specific papers and presentations are listed in Publications and Presentations respectively).
 </div>
 </Item>
 
@@ -727,16 +734,6 @@ Assistant to Dr. Chris Tonkin in the recording sessions for *Transformations*
 ## Other Relevant Skills
 
 ### Administrative Experience
-<Item>
-<div slot="left">
-
-2021
-</div>
-<div slot="right">
-
-Creative Coding Lab Symposium event organisation including finding speakers, *University of Huddersfield*
-</div>
-</Item>
 
 <Item>
 <div slot="left">
@@ -893,7 +890,8 @@ I currently hold a valid UK driving license.
 <style>
 
     * {
-        font-family: "Helvetica"
+        font-family: "Helvetica", sans-serif;
+
     }
     #header {
         display: flex;
@@ -902,20 +900,20 @@ I currently hold a valid UK driving license.
         line-height: 0.5em;
     }
 
+
     #address-etc > p {
         line-height: 2em;
+        text-align: right;
     }
 
     p {
         margin: 0;
-        text-align: justify;
+        text-align: left;
     }
     
-    h2 {padding-top: 19px}
 
     h3 {
         font-weight: bold;
-        padding-top: 10px;
     }
 
     h4 {

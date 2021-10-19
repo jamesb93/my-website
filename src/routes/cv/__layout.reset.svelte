@@ -10,15 +10,15 @@
 
 <style media="print">
 	.content {
-		justify-content: center;
 		height: 100%;
+		line-height: 1.5em;
 	}
 
 	main {
-		min-width: 30%;
-		max-width: 550px;
-		margin: 0 auto;
-		padding: 15px;
-		padding-top: 50px;
+			min-width: 30%;
+			max-width: 750px;
+			margin: 0 auto;
+			padding: 15px;
+			padding-top: 50px;
 	}
 </style>
