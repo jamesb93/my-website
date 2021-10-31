@@ -13,7 +13,7 @@
         display: flex;
         flex-direction: row;
         padding-top: 5px;
-        gap: 1em;
+        gap: 0.5em;
     }
     .left {
         max-width: 85px;
