@@ -12,10 +12,10 @@
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
-		"sass": "^1.43.4",
-		"svelte": "^3.44.0",
+		"sass": "^1.43.5",
+		"svelte": "^3.44.2",
 		"svelte-preprocess": "^4.9.8",
-		"vite": "^2.6.13"
+		"vite": "^2.6.14"
 	},
 	"type": "module",
 	"engines": {
