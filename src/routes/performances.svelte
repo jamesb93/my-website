@@ -3,6 +3,8 @@
 </svelte:head>
 
 <h1 id="performances">performances</h1>
+<h2 id="section">2021</h2>
+<p><b><a href="/projects/interferences">G090G10564620B7Q</a></b> for Fixed Media. <a href="https://www.splendoramsterdam.com">Splendor</a>, Amsterdam, Netherlands. Diffused by <a href="https://www.pierrealexandretremblay.com">PA Tremblay</a>.
 <h2 id="section">2019</h2>
 <p><b>Refracted Touch</b> for Slide Guitar and Electronics. St Paul’s, Huddersfield, 2019 UK. Performed by <a href="http://www.elision.org.au/elision-189/">Daryl Buckley (Slide Guitar)</a> and James Bradbury (Electronics)</p>
 <p><b>Stitch/Strata</b> for Fixed Media. Diffused at Electric Spring, University of Huddersfield, 2019 UK.</p>

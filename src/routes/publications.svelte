@@ -6,6 +6,8 @@
 <p>This page contains a list of all official peer-reviewed publications and presentations. I will try to provide links where possible to anything that is open access.</p>
 <p><em>(i) invited but not attended.</em></p>
 <p><em>(p) presented.</em></p>
+<h2 id="section">2021</h2>
+<p><em>(p)</em> - Accidental Polyglot. NOTAM Max Meetup, Online. Not recorded.</p>
 <h2 id="section">2020</h2>
 <p><em>(p)</em> - ’Computer-assisted corpus exploration with UMAP and agglomerative clustering. The 2020 Joint Conference on AI Music Creativity, Online. <a href="https://zenodo.org/record/4285398"><strong>pdf</strong></a> | <a href="https://www.youtube.com/watch?v=-FNO0QovfsI&amp;feature=youtu.be"><strong>video</strong></a></p>
 <h2 id="section-1">2019</h2>
