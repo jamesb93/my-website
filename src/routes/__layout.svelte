@@ -7,6 +7,7 @@
 	const breakpoint = 1200;
 	let w;
 	let expand = false;
+	$: navExpand = w >= breakpoint || expand;
 
 	onMount(async() => {
 		expand = w < breakpoint ? false : true;
@@ -26,6 +27,13 @@
 		{link: '/projects/biomimicry', text: 'Biomimicry'},
 		{link: '/projects/stitchstrata', text: 'Stitch/Strata'}
 	]
+
+	const dev = [
+		{link: '/dev/flucoma-learn', text: 'FluCoMa Learn'},
+		{link: '/dev/intersymmetric', text: 'Intersymmetric'},
+		{link: '/dev/phd', text: 'PhD Thesis'},
+		{link: '/dev/es2022', text: 'Electric Spring 2022 Website'}
+	]
 </script>
 
 <svelte:window bind:innerWidth={w} />
@@ -41,15 +49,10 @@
 		{#if w < breakpoint}
 		<Hamburger expanded={expand} on:click={ ()=> expand=!expand }/>
 		{/if}
-
-		{#if (w < breakpoint && expand === true) || w >= breakpoint}
+		{#if navExpand}
 		<div class=nav-list>
 			{#each sidebarLinks as pg}
-			<a 
-			class='sidebar-link' 
-			href={pg.link} 
-			class:sel={$page.path === pg.link}
-			>
+			<a class='sidebar-link' href={pg.link} class:sel={$page.path === pg.link}>
 			{pg.text}
 			</a>
 			{/each}
@@ -71,7 +74,25 @@
 			</a>
 			{/each}
 		</div>
+
+		<!-- WEB DEV DIVIDER -->
+		<div id='project-divider'>
+			Web Dev
+		</div>
+
+		<div class='nav-list projects'>
+			{#each dev as d}
+			<a 
+			class='sidebar-link project' 
+			href={d.link} 
+			class:sel={$page.path === d.link}
+			>
+			{d.text}
+			</a>
+			{/each}
+		</div>
 		{/if}
+
 	</div>
 	
 	<!-- MAIN CONTENT -->
@@ -115,6 +136,7 @@
 
 	.projects {
 		gap: 6px;
+		margin-left: 0.7em;
 	}
 
 	.sidebar-link {

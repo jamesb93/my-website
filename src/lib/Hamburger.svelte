@@ -9,7 +9,7 @@
 	export let expanded = false;
 </script>
 
-<div class="btn" id='hamburger' on:click={handleClick}>
+<div class="btn" on:click={handleClick}>
     <svg width=24 height=20 id='hamburger'>
         <line x1=0 y1=4  x2=24 y2=4 id='hamburger' class:expanded={expanded}/>
         <line x1=0 y1=11  x2=24 y2=11 id='hamburger' class:expanded={expanded}/>
