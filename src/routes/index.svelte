@@ -1,11 +1,17 @@
+<script>
+	import Gravity from '$lib/Gravity.svelte';
+</script>
+
 <svelte:head>
     <title>james bradbury | sound & code</title>
 </svelte:head>
 
-<div align="center">
+<Gravity />
+
+<!-- <div align="center">
 	<img src="/img/personal.jpg" alt="Myself, Niamh Dell and Jameson Feakes">
 	<p id="caption">Photography by <a target="_blank" href="https://www.oliviabettinadavies.com">Olivia Davies</a> - (she is also a great composer!)</p>
-</div>
+</div> -->
 
 <div id='spiel'>
 	<p>
