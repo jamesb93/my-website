@@ -76,7 +76,7 @@
 		</div>
 
 		<!-- WEB DEV DIVIDER -->
-		<div id='project-divider'>
+		<!-- <div id='project-divider'>
 			Web Dev
 		</div>
 
@@ -90,7 +90,7 @@
 			{d.text}
 			</a>
 			{/each}
-		</div>
+		</div> -->
 		{/if}
 
 	</div>
