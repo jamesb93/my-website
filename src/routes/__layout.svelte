@@ -1,17 +1,11 @@
 <script>
 	import '../app.scss';
 	import { page } from '$app/stores';
-	import { slide } from 'svelte/transition';
-	import { onMount } from 'svelte';
 	import Hamburger from '$lib/Hamburger.svelte';
 	const breakpoint = 1200;
 	let w;
 	let expand = false;
 	$: navExpand = w >= breakpoint || expand;
-
-	onMount(async() => {
-		expand = w < breakpoint ? false : true;
-	})
 
 	const sidebarLinks = [
 		{link : '/code', text: 'Code'},
@@ -39,7 +33,6 @@
 <svelte:window bind:innerWidth={w} />
 
 <div class='container'>
-	<!-- NAVIGATION -->
 	<div class='navigation'>
 		<div id='header'>
 			<a id='title' href='/'>james bradbury</a>
