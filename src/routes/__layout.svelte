@@ -26,7 +26,9 @@
 		{link: '/dev/flucoma-learn', text: 'FluCoMa Learn'},
 		{link: '/dev/intersymmetric', text: 'Intersymmetric'},
 		{link: '/dev/phd', text: 'PhD Thesis'},
-		{link: '/dev/es2022', text: 'Electric Spring 2022 Website'}
+		{link: '/dev/es2022', text: 'Electric Spring 2022 Website'},
+		{link: '/dev/patch-bay', text: 'Patch Bay'},
+		{link: '/dev/simply', text: 'Simple Todo'}
 	]
 </script>
 
@@ -45,7 +47,7 @@
 		{#if navExpand}
 		<div class=nav-list>
 			{#each sidebarLinks as pg}
-			<a class='sidebar-link' href={pg.link} class:sel={$page.path === pg.link}>
+			<a class='sidebar-link' href={pg.link} class:sel={$page.url.pathname === pg.link}>
 			{pg.text}
 			</a>
 			{/each}
@@ -61,7 +63,7 @@
 			<a 
 			class='sidebar-link project' 
 			href={pj.link} 
-			class:sel={$page.path === pj.link}
+			class:sel={$page.url.pathname === pj.link}
 			>
 			{pj.text}
 			</a>
@@ -78,7 +80,7 @@
 			<a 
 			class='sidebar-link project' 
 			href={d.link} 
-			class:sel={$page.path === d.link}
+			class:sel={$page.url.pathname === d.link}
 			>
 			{d.text}
 			</a>
