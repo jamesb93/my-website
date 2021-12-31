@@ -15,7 +15,7 @@
 
 <div id='spiel'>
 	<p>
-		I am a composer and creative-coder from Perth, Western Australia. I currently reside in Northern England. I enjoy programming in my practice and harnessing the computer to find and organise audio-samples through machine listening and learning. I finished my PhD @ University of Huddersfield in 2021 under the supervision of <a target="_blank" href="http://www.alexanderjharker.co.uk">Alex Harker</a> and <a target="_blank" href="https://pure.hud.ac.uk/en/persons/steven-jan">Steven Jan</a>. You can read my thesis at <a target='_blank' href='https://harnessing.xyz'>https://harnessing.xyz</a>.
+		I am a creative-coder from Perth, Western Australia currently living in Northern England. I enjoy programming in my practice often harnessing the computer to find and organise audio-samples through machine listening and learning. I finished my PhD @ University of Huddersfield in 2021 under the supervision of <a target="_blank" href="http://www.alexanderjharker.co.uk">Alex Harker</a> and <a target="_blank" href="https://pure.hud.ac.uk/en/persons/steven-jan">Steven Jan</a>. You can read my thesis at <a target='_blank' href='https://harnessing.xyz'>https://harnessing.xyz</a>.
 	</p>
 
 	<p>
@@ -31,19 +31,9 @@
 <a class="hidden" href="/cv/academic">academic cv</a>
 
 <style>
-	img {
-		width: 50%;
-		margin: 0 auto;
-	}
-
 	#spiel {
 		max-width: 75ch;
 		margin: 0 auto;
-	}
-
-	#caption {
-		font-style: italic;
-		font-size: 12px;
 	}
 
 	#contact {
