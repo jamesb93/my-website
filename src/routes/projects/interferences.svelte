@@ -11,6 +11,10 @@
     
 </div>
 
+<p>
+    Interferences is going to be released on <a href="https://tokinogake.bandcamp.com/">時の崖_tokinogake</a> in March, 2022.
+</p>
+<!-- 
 <div id='music-container'>
     <div id='item'>
         <h2>G090G10564620B7Q</h2>
@@ -31,7 +35,7 @@
              >
         </audio>
     </div>
-</div>
+</div> -->
 
 <p>
     I talk about my aesthetic motivations and the code which assisted me in writing these two works in significant detail in my thesis: <a target="blank" href="https://harnessing.xyz/projects/interferences">https://harnessing.xyz/projects/interferences</a>
