@@ -38,7 +38,7 @@
 </div> -->
 
 <p>
-    I talk about my aesthetic motivations and the code which assisted me in writing these two works in significant detail in my thesis: <a target="blank" href="https://harnessing.xyz/projects/interferences">https://harnessing.xyz/projects/interferences</a>
+    I talk about my aesthetic motivations and the code which assisted me in writing these two works in significant detail in my thesis: <a target="blank" href="https://harnessing.xyz/projects/interferences">https://harnessing.xyz/projects/interferences</a>.
 </p>
 
 <style>
