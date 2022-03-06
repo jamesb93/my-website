@@ -73,5 +73,10 @@ export const projects = [
 		name: 'Annealing Strategies',
 		img: '/img/annealing-strategies.jpg',
 		href: '/projects/annealing-strategies'
+	},
+	{
+		name: 'Share A Patch With Me',
+		img: '/img/share-patch.jpg',
+		href: 'https://shareapatchwith.me/'
 	}
 ];
