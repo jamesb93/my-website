@@ -1,50 +1,45 @@
 <script>
-	import { createEventDispatcher } from 'svelte';
-	const dispatch = createEventDispatcher();
-
-	function handleClick() {
-		dispatch('click')
-	}
-
 	export let expanded = false;
 </script>
 
-<div class="btn" on:click={handleClick}>
-    <svg width=24 height=20 id='hamburger'>
-        <line x1=0 y1=4  x2=24 y2=4 id='hamburger' class:expanded={expanded}/>
-        <line x1=0 y1=11  x2=24 y2=11 id='hamburger' class:expanded={expanded}/>
-        <line x1=0 y1=18 x2=24  y2=18 id='hamburger' class:expanded={expanded}/>
-    </svg>
+<div class="btn" on:click>
+	{#if !expanded}
+	<svg width=15 height=15 id="hamburger">
+		<line x1=0 y1=4  x2=15 y2=4 id="hamburger" />
+		<line x1=0 y1=8 x2=15 y2=8 id="hamburger" />
+		<line x1=0 y1=12 x2=15 y2=12 id="hamburger" />
+	</svg>
+	{:else}
+	<svg width=15 height=15 id="hamburger">
+		<line x1=3 y1=4  x2=12 y2=12 id="hamburger" />
+		<line x1=3 y1=12 x2=12 y2=4 id="hamburger" />
+	</svg>
+	{/if}
 </div>
 
 <style>
-    .btn {
+	.btn {
 		background-color: white;
 		border: none;
 		padding-top: 10px;
 	}
 
 	.btn:hover > svg line {
-		stroke: rgb(57, 57, 57);
+		stroke: var(--feature-color);
 	}
 
 	.btn:active > svg line {
-		stroke: rgb(0, 0, 0);
+		stroke: black;
 	}
 
-    svg {
+	svg {
 		min-height: 24px;
 		transition: transform 0.3s ease-in-out;
 	}
-	
+
 	svg line {
 		stroke: rgb(139, 139, 139);
 		stroke-width: 2;
 		transition: transform 0.3s ease-in-out;
-		transform: scale(2, 0.75);
-	}
-
-	.expanded {
-		transform: none;
 	}
 </style>

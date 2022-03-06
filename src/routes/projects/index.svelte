@@ -1,8 +1,6 @@
 <script>
-    import { goto } from '$app/navigation';
-    import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
 
-    onMount(async() => [
-        goto('projects/interferences')
-    ])
+	onMount(async () => [goto('projects/interferences')]);
 </script>

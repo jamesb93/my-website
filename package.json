@@ -2,28 +2,30 @@
 	"name": "personal-website",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev --host",
+		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
-		"start": "svelte-kit start",
-		"lint": "prettier --check .",
-		"format": "prettier --write ."
+		"package": "svelte-kit package",
+		"preview": "svelte-kit preview",
+		"prepare": "svelte-kit sync",
+		"test": "playwright test",
+		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-node": "next",
+		"@playwright/test": "^1.19.2",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
-		"sass": "^1.47.0",
-		"svelte": "^3.45.0",
-		"svelte-preprocess": "^4.10.1",
-		"vite": "^2.7.10"
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^3.4.1",
+		"prettier": "^2.5.1",
+		"prettier-plugin-svelte": "^2.6.0",
+		"svelte": "^3.46.4"
 	},
 	"type": "module",
-	"engines": {
-		"node": ">= 12.17.0"
-	},
 	"dependencies": {
-		"mdsvex": "^0.9.8",
-		"peaks.js": "^0.24.1",
-		"pts": "^0.10.9"
+		"konva": "^8.3.3",
+		"peaks.js": "^0.28.1",
+		"waveform-data": "^4.3.0"
 	}
 }
