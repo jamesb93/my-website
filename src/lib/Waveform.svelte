@@ -1,141 +1,86 @@
 <script>
 	import { onMount } from 'svelte';
-	import { browser } from '$app/env';
-	let Peaks;
-	let instance;
-	let overview;
-	let zoom;
-	let audio;
-	let controls;
-	let peaksControls;
-	let zoomIn;
-	let zoomOut;
-	let playing = false;
-	let playPause;
-	export let title = 'title';
-	export let subtitle = null;
-	export let performer = null;
-	export let perfLink = null;
-	export let file;
-	export let buffer;
+	export let src= '';
+	export let label = '';
+	export let waveform = true;
+	export let data = '';
 
-	const handleZoomIn = () => {
-		instance.zoom.zoomIn();
-	};
+	let Peaks, instance, overview, audio;
 
-	const handleZoomOut = () => {
-		instance.zoom.zoomOut();
-	};
-
-	const handlePlay = () => {
-		if (playing) {
-			playing = false;
-			instance.player.pause();
-		} else {
-			playing = true;
-			instance.player.play();
-		}
-	};
-
-	onMount(async () => {
-		if (browser) {
-			try {
-				// SSR Compatability
-				const module = await import('peaks.js');
-				Peaks = module.default;
-
-				// Generate an instance form factory
-				instance = Peaks.init({
-					containers: {
-						zoomview: zoom,
-						overview: overview
-					},
-					dataUri: { arraybuffer: buffer },
-					mediaElement: audio,
-					height: 80,
-					zoomWaveformColor: 'grey',
-					overviewWaveformColor: 'rgba(0, 0, 0, 1.0)',
-					overviewHighlightColor: 'grey',
-					overviewHighlightOffset: 11,
-					playheadColor: 'rgba(0, 0, 0, 1)',
-					playheadTextColor: 'rgba(150, 0, 0, 1)',
-					showPlayheadTime: true,
-					fontFamily: 'sans-serif',
-					pointMarkerColor: 'rgba(0, 0, 0, 0.0)',
-					axisGridlineColor: 'rgba(0, 0, 0, 0.0)',
-					randomizeSegmentColor: true
-				});
-			} catch (err) {
-				console.error(err);
+	onMount(async() => {
+		if (waveform) {
+			const module = await import("peaks.js");
+			Peaks = module.default;
+			const audioContext = new (AudioContext || webkitAudioContext)()
+			let options = {
+				mediaElement: audio,
+				containers: {
+					overview: overview
+				},
+				waveformColor: 'rgba(104, 105, 172, 0.9)',
+				playheadColor: 'rgba(0, 0, 0, 1)',
+				playheadTextColor: '#aaa',
 			}
+			if (data === '') {
+				options.webAudio = {
+					audioContext: audioContext,
+					scale: 1024,
+					multiChannel: false
+				}
+			} else {
+				options.dataUri = {
+					arraybuffer: data
+				}
+			}
+
+			instance = Peaks.init(options, (err, p) => {
+				if (err) {
+					console.log(err)
+				} else {
+					instance = p
+				}
+			});
 		}
-	});
+	})
 </script>
 
-<div class="audio-box">
-	<span class="title">{title}</span><br />
-	{#if subtitle}
-		<span class="subtitle">{subtitle}</span>
+<div class="container">
+	{#if waveform}
+	<div class='waveform' bind:this={overview} />
 	{/if}
-	{#if performer}
-		<br />
-		<span class="subtitle">
-			<a target="blank" href={perfLink}>{performer}</a>
-		</span>
-	{/if}
-	<div bind:this={overview} />
-	<div bind:this={zoom} />
-	<div bind:this={peaksControls} class="peaks-controls">
-		<audio bind:this={audio}>
-			<source src={file} type="audio/mp3" />
-			<track kind="captions" />
-		</audio>
-		<div bind:this={controls} class="audio-controls">
-			<div>
-				<button bind:this={playPause} on:click={handlePlay} class="pp-button">
-					{#if playing}
-						pause
-					{:else}
-						play
-					{/if}
-				</button>
-				<button bind:this={zoomIn} on:click={handleZoomIn} class="button">zoom in</button>
-				<button bind:this={zoomOut} on:click={handleZoomOut} class="button">zoom out</button>
-			</div>
-		</div>
+	
+	<div class='audio'>
+		<audio controls bind:this={audio} src={src} type="audio/mp3" />
+		<div class="label">{ label }</div>
 	</div>
 </div>
 
-<style>
-	.audio-box {
-		padding-top: 1em;
-		padding-bottom: 1em;
-	}
 
-	.audio-controls {
+<style lang="postcss">
+	.container {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		flex-basis: auto;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		gap: 1em;
+		width: 100%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		gap: 2em;
 	}
 
-	.pp-button {
-		width: 5em;
+	.audio {
+		display: flex;
+		flex-direction: column;
+		place-items: center;
+		gap: 0.5em;
 	}
 
-	.title {
-		font-size: 13px;
-		font-weight: 500;
-		padding: 0;
+	.label {
+		font-size: 1rem;
 	}
 
-	.subtitle {
-		font-size: 12px;
-		padding: 0;
-	}
-
-	.peaks-controls {
-		z-index: 100;
-	}
+	.waveform {
+		width: 100%;
+        height: 65px;
+    }
 </style>

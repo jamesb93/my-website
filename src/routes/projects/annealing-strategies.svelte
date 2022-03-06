@@ -4,7 +4,7 @@
 
 <h1>Annealing Strategies</h1>
 
-<Waveform title="Annealing Strategies" file="/audio/as.mp3" buffer="/waveforms/as.dat" />
+<Waveform src="/audio/as.mp3" />
 
 <p>
 	"Annealing Strategies" is a system, piece and patch that optimises and searches a chaotic

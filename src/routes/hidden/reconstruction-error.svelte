@@ -1,4 +1,5 @@
 <script>
+	import Waveform from '$lib/Waveform.svelte';
 	const tunes = [
 		{ name: '--isn', src: 'https://user.fm/files/v2-26f14ca8e87d3f410ae16349712332e8/--isn.mp3' },
 		{
@@ -31,13 +32,7 @@
 
 <div id="music-container">
 	{#each tunes as tune}
-		<div id="item">
-			<h2>{tune.name}</h2>
-			<audio controls>
-				<source type="audio/mp3" src={tune.src} />
-				<track kind="captions" />
-			</audio>
-		</div>
+	<Waveform src={tune.src} />
 	{/each}
 </div>
 
@@ -47,11 +42,5 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
-	}
-
-	#item {
-		display: flex;
-		flex-direction: column;
-		gap: 3px;
 	}
 </style>
