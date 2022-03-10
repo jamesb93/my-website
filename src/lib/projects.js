@@ -2,7 +2,7 @@ export const projects = [
     {
 		name: 'Intersymmetric',
 		img: '/img/intersymmetric2.jpg',
-		href: 'https://intersymmetric.xyz'
+		href: 'https://intersymmetric.xyz/seq-1/idx'
 	},
     {
 		name: 'Time Diagram',
