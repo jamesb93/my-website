@@ -1,3 +1,5 @@
+<img src='/img/headshot.jpeg' alt='james bradbury head shot' />
+
 <div id="spiel">
 	<p>
 		I am a creative-coder and artist from Perth, Western Australia currently living in Northern
@@ -11,3 +13,10 @@
 		<a href="mailto:hello@jamesbradbury.net" id="contact">hello@jamesbradbury.net.</a>
 	</p>
 </div>
+
+<style>
+	img {
+		max-width: 50%;
+		margin: 0 auto;
+	}
+</style>
