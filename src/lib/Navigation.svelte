@@ -51,13 +51,13 @@
 	.nav-list {
 		display: flex;
 		flex-direction: column;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 		gap: 3px;
 	}
 	@media (max-width: 1100px) { /* small */
 		.navigation {
-			position: absolute;
+			/* position: absolute; */
 			width: 100%;
 			left: 0;
 			padding-left: 2em;
