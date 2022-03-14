@@ -26,7 +26,7 @@ export const projects = [
 	},
     {
         name: 'ReaCoMa',
-        img: 'http://assets.jb.imap.cc/reacoma.jpg',
+        img: '/img/reacoma.jpg',
         href: 'https://harnessing.xyz/tech/reacoma'
     },
     {
@@ -41,7 +41,7 @@ export const projects = [
     },
     {
         name: 'Reathon',
-        img: 'http://assets.jb.imap.cc/reathon.jpg',
+        img: '/img/reathon.jpg',
         href: 'https://github.com/jamesb93/reathon'
     },
     {
