@@ -3,6 +3,13 @@
 </svelte:head>
 
 <h1 id="performances">performances</h1>
+
+<h2 id="section">2022</h2>
+<p>
+	<b><a href="/projects/interferences">P08</a></b> for Fixed Media.
+	<a href="http://lufthavna.no/mir-3/">Cafe Mir</a>, Oslo, Norway. Performed by James Bradbury
+</p>
+
 <h2 id="section">2021</h2>
 <p>
 	<b><a href="/projects/interferences">G090G10564620B7Q</a></b> for Fixed Media.
