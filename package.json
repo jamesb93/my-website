@@ -12,19 +12,19 @@
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.19.2",
+		"@playwright/test": "^1.20.1",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^3.4.1",
-		"prettier": "^2.5.1",
+		"prettier": "^2.6.1",
 		"prettier-plugin-svelte": "^2.6.0",
 		"svelte": "^3.46.4"
 	},
 	"type": "module",
 	"dependencies": {
-		"konva": "^8.3.3",
+		"konva": "^8.3.5",
 		"peaks.js": "^0.28.1",
 		"waveform-data": "^4.3.0"
 	}
