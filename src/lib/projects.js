@@ -11,7 +11,7 @@ export const projects = [
 	},
 	{
 		name: 'Interferences',
-		img: '/img/interferences.jpg',
+		img: '/img/interferences-tokinogake.jpg',
 		href: '/projects/interferences'
 	},
 	{
