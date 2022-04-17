@@ -1,4 +1,9 @@
 export const projects = [
+	{
+		name: 'Interferences',
+		img: '/img/interferences-tokinogake.jpg',
+		href: '/projects/interferences'
+	},
     {
 		name: 'Intersymmetric',
 		img: '/img/intersymmetric2.jpg',
@@ -8,11 +13,6 @@ export const projects = [
 		name: 'Time Diagram',
 		img: '/img/time-diagram.jpg',
 		href: '/projects/time-diagram'
-	},
-	{
-		name: 'Interferences',
-		img: '/img/interferences-tokinogake.jpg',
-		href: '/projects/interferences'
 	},
 	{
 		name: 'Reconstruction Error',
