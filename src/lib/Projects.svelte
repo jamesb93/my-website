@@ -31,6 +31,12 @@
 		gap: 1em;
 	}
 
+	@media (max-width: 1100px) {
+		.container {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
 	.project {
         aspect-ratio: 1;
 		display: grid;
@@ -47,7 +53,7 @@
 
 	figure {
 		margin: 0;
-		padding: 1em;
+		padding: 0.5em;
 	}
 
 	figcaption {
