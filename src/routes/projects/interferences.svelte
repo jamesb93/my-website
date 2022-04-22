@@ -1,7 +1,7 @@
 <h1>Interferences</h1>
 
 <div class="container">
-	<iframe style="border: 0; width: 350px; height: 522px;" src="https://bandcamp.com/EmbeddedPlayer/album=2729925623/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://jamesbradbury.bandcamp.com/album/interferences">Interferences by James Bradbury</a></iframe>
+	<iframe src="https://bandcamp.com/EmbeddedPlayer/album=2729925623/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://jamesbradbury.bandcamp.com/album/interferences">Interferences by James Bradbury</a></iframe>
 </div>
 
 
@@ -35,5 +35,12 @@
 	.container {
 		display: grid;
 		place-items: center;
+	}
+
+	.container > iframe {
+		border: 0; 
+		width: 350px; 
+		height: 522px;
+		max-width: 100%;
 	}
 </style>
