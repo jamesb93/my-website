@@ -16,7 +16,7 @@ import adapter from '@sveltejs/adapter-vercel';
 const config = {
 	kit: {
 		adapter: adapter({
-			edge: false
+			edge: true
 		}),
 	}
 };
