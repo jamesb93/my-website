@@ -22,17 +22,17 @@ export const projects = [
     {
 		name: 'PhD Thesis',
 		img: '/img/phd.jpg',
-		href: 'https://harnessing.xyz'
+		href: 'https://phd.jamesbradbury.net'
 	},
     {
         name: 'ReaCoMa',
         img: '/img/reacoma.jpg',
-        href: 'https://harnessing.xyz/tech/reacoma'
+        href: 'https://phd.jamesbradbury.net/tech/reacoma'
     },
     {
         name: 'FTIS',
         img: '/img/ftis.jpg',
-        href: 'https://harnessing.xyz/tech/ftis'
+        href: 'https://phd.jamesbradbury.net/tech/ftis'
     },
     {
         name: 'mosh',
